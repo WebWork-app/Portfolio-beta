@@ -468,7 +468,7 @@ a,
 
 /* MENU CONTAINER ----- */
 	.side_menu {
-        background: linear-gradient(to bottom right,rgb(224, 224, 224), #cfcfcf );
+        background: rgb(241, 249, 255);
 		height: 100vh;
 		left: -80%;
 		position: fixed;
