@@ -25,7 +25,7 @@
     <div id= "two">
         <h1>I am <br> Saqib Ali</p>
             
-        <h3>A canidate for Computer Engineering</h3>
+        <h3>Motivted. Determined. Passionate.</h3>
     
         <img src="./images/working.gif" alt="">
     </div>
@@ -48,25 +48,10 @@
     <div class="carousel">
         <!-- Pictures -->
         <div class="pictureHolder">
-            <img src="images/img_1.jpg">
-            <p class="descriptionText">We Have It All!</p>
+            <img src="images/hello.gif">
+            <p class="descriptionText"></p>
         </div>
-        <div class="pictureHolder">
-            <img src="images/img_2.jpg">
-            <p class="descriptionText">Arcades! Old is gold!</p>
-        </div>
-        <div class="pictureHolder">
-            <img src="images/img_3.jpg">
-            <p class="descriptionText">More fun for more people</p>
-        </div>
-        <div class="pictureHolder">
-            <img src="images/img_4.jpg">
-            <p class="descriptionText">Fun for the kids</p>
-        </div>
-        <div class="pictureHolder">
-            <img src="images/img_5.jpg">
-            <p class="descriptionText">Enjoyment to the max</p>
-        </div>
+
 
         <!-- Picture Description -->
         <div class="description"><p class="descriptionText animFromTop"></p></div>
@@ -86,9 +71,10 @@
         
         <h1>Experience</h1>
         <div class = "gaming">
-            <span><img src="./images/WeWork.png" alt=""></span>
-            <h3>Software Engineering Intern</h3>
-            <div class = "card">
+            
+            <div class = "card" style = "overflow-y: scroll">
+                <span><img src="./images/WeWork.png" alt=""></span>
+                <h3>Software Engineering Intern</h3>
                 <ul>
                     <li>
                         <span>
@@ -136,23 +122,42 @@
                         
                     </li>
                 </ul>
+
             </div>
         </div>
     </div>
     
 <br><br>
 
-    <div id= "five">
+    <div id= "five" >
+        <h1>Projects</h1>
         <ul>
-            <button> Calender </button>
-            <button> Booking </button>
-            <button> FAQ </button>
-            <button> Menu </button>
+            <div class = "class">
+                <img src="./images/html.png" alt="">
+                <img src="./images/css.png" alt="">
+                <img src="./images/JS.png" alt="">
+                <img src="./images/jQuery.png" alt=""> 
+            <h3>Online Portfolio</h3>  
+                <p>Web Developement has been my passion for some time now! I created this responsive website using HTML, CSS, JavaSCript with some Jquery!</p>   
+            </div>
+            <div class = "class"> 
+                <img src="./images/android.png" alt="">
+                <img src="./images/java.png" alt="">
+                <h3>Flappy Bird</h3>  
+                    <p>Created an android game using Android Studio and Java</p>   
+            </div>
+            <div class = "class"> 
+                <img src="./images/vue.png" alt="">
+                <img src="./images/nodeJS.jpg" alt="">
+                <img src="./images/mongodb.jpg" alt="">
+                <h3>Academic Mark PWA</h3>  
+                    <p>Created a Progressive Web Application which keeps an updated
+                        record of a students mark for any number of courses. Front end
+                        comprised of Vue with the backend on MongoDB and NodeJS.
+                    </p>   
+            </div>
         </ul>
-        <div class = "location">
-            <button> Waterloo </button>
-            <button> Toronto </button>
-        </div>
+
         
     </div>
 
@@ -166,22 +171,28 @@
     </div>
     
 
-    <div class="side_menu" style="padding-top: 15vh;">
+    <div class="side_menu" style="padding-top: 15vh; overflow-y:scroll;">
         <div class="burger_box">
             <div class="menu-icon-container">
             </div>
         </div>
         
         <div class="container">
-            
-            <h2 class="menu_title">Projects</h2>
+            <div class = "project">
+                <h2 class="menu_title"><u>Projects</u></h2>
+            </div>
             <ul class="list_load" >
                 <li class="list_item"><a href="#"><span class = "material-icons">account_circle</span>Responsive Online Portfolio</a></li>
-                <li class="list_item"><a href="#"><span class = "material-icons">check_circle</span>List Item 02</a></li>
-                <li class="list_item"><a href="#"><span class = "material-icons">explore</span>List Item 03</a></li>
-                <li class="list_item"><a href="#"><span class = "material-icons">group_work</span>List Item 04</a></li>
+                <li class="list_item"><a href="#"><span class = "material-icons">check_circle</span>Marks App</a></li>
+                <li class="list_item"><a href="#"><span class = "material-icons">explore</span>Curry Choice App</a></li>
+                <li class="list_item"><a href="#"><span class = "material-icons">group_work</span>Flappy Bird</a></li>
+
+
             </ul>
-            <img style = "margin:0 auto; width: min(40vw, 200px); height: auto;" src="./images/projects.gif" alt="">
+            <div>
+                <img style = "margin:0 auto; width: min(40vw, 200px); height: auto;" src="./images/projects.gif" alt="">
+            </div>
+            
         </div>
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
