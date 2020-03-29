@@ -11,7 +11,12 @@ function anch(arg) {
     if (!target) return;
     
     // controls the scrolling behaviour
-    window.scrollBy({ top: topLength(target) - 100, left: 0, behavior: "smooth" });
+    try {
+        window.scrollBy({ top: topLength(target) - 100, left: 0, behavior: "smooth" });
+    }
+    catch {
+        window({ top: topLength(target) - 100, left: 0, behavior: "smooth" });
+    }
 }
 
 /*** (2) IMAGE SLIDER***/
@@ -136,3 +141,4 @@ $(document).on('click','.js-menu_toggle.opened',function(e){
 	});
 	$('.list_load').slideUp(300);
 });
+

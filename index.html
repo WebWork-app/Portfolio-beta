@@ -8,6 +8,37 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+    #three {
+    padding-top: 20px;
+    height: 900px;
+    color: rgba(0, 0, 0, 0.459);
+}
+
+    #three .gaming .card img {
+    margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    width: 9vw;
+    height: auto;
+    border-radius:10px;
+    box-shadow: 
+    3px 3px 5px  rgba(0, 0, 0, 0.25) inset,
+    -3px -3px 5px  rgb(255, 255, 255) inset;
+}
+    #five ul .class img {
+    width: 6vw;
+    max-width: 30px;
+    margin-right:10px;
+    height: auto;
+    border-radius: 50%;
+    border: solid rgb(59, 59, 59) 0.5px;
+    box-shadow: 
+    1px 1px 2px 0 rgba(0, 0, 0, 0.603),
+    -1px -1px 2px 0 rgba(255, 255, 255, 0.849);
+}
+</style>
 </head>
 <body>
 <!-- (1) NAV: Smooth Scrolls to clicked component by targetting id -->
@@ -18,12 +49,12 @@
 			<a href="#four"><li><span class = "material-icons">account_box</span></li></a>
             <a href="#one"><li><span class = "material-icons">theaters</span></li></a>
             <a href="#three"><li><span class = "material-icons">work</span></li></a>
-            <a href="#five"><li><span class = "material-icons">dashboard</span></li></a>
+            <a id = "project" href="#five"><li><span class = "material-icons">dashboard</span></li></a>
             <a href=""><li><span class = "material-icons js-menu_toggle closed">view_headline</span></li></a>
 		</ul>
     </nav>
     <div id= "two">
-        <h1>I am <br> Saqib Ali</p>
+        <h1>I am <br> Saqib Ali</h1>
             
         <h3>Motivted. Determined. Passionate.</h3>
     
@@ -133,7 +164,7 @@
         <h1>Projects</h1>
         <ul>
             <div class = "class">
-                <img src="./images/html.png" alt="">
+                <img  src="./images/html.png" alt="">
                 <img src="./images/css.png" alt="">
                 <img src="./images/JS.png" alt="">
                 <img src="./images/jQuery.png" alt=""> 
