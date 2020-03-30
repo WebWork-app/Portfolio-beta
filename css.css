@@ -431,6 +431,7 @@ font-weight: 500;
 #six {
     padding: 20px;
     height: 300px;
+    width: 90%;
 }
 #six a {
     border-radius: 10px;
