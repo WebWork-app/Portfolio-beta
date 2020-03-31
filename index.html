@@ -21,14 +21,13 @@
     #three .gaming .card img {
     margin: 0 auto;
     display: flex;
-    margin: 0 auto;
     padding: 10px;
-    width: 9vw;
-    height: auto;
+    width: 60px;
+    height: 20px;
     border-radius:10px;
     box-shadow: 
-    3px 3px 5px  rgba(0, 0, 0, 0.25) inset,
-    -3px -3px 5px  rgb(255, 255, 255) inset;
+    2px 2px 3px  rgba(0, 0, 0, 0.25) inset,
+    -2px -2px 3px  rgb(255, 255, 255) inset;
 }
     #five ul .class img {
     width: 6vw;
@@ -59,7 +58,7 @@
     <div id= "two">
         <h1>I am <br> Saqib Ali</h1>
             
-        <h3>Motivted. Determined. Passionate.</h3>
+        <h3 style = "font-weight: 5 00;">Motivted. Determined. Passionate</h3>
     
         <img src="./images/working.gif" alt="">
     </div>
@@ -78,11 +77,19 @@
     <div id= "three">
         
         <h1>Experience</h1>
-        <div class = "gaming">
+
+        <div style = "width:90%; max-width: 500px; position: relative; margin: 0 auto; z-index: 2">
+            <button onclick="next()" style = "left:30px; position:absolute"><span class="material-icons" style="width:24px;">arrow_backward</span></button>
+            <button onclick="next()" style = "right:30px; position:absolute"><span class="material-icons">arrow_forward</span></button>
+        </div>
+        
+        <div class = "gaming" style = "width: 90%; max-width: 700px;
+        height: 700px; position: relative; margin: 0 auto; margin-top:10px; ">
             
-            <div class = "card" style = "overflow-y: scroll">
+            <div class = "card" id= "card1" style = "z-index:1;">
                 <span><img src="./images/WeWork.png" alt=""></span>
                 <h3>Software Engineering Intern</h3>
+                <div class = "text-card">
                 <ul>
                     <li>
                         <span>
@@ -130,9 +137,58 @@
                         
                     </li>
                 </ul>
-
             </div>
+            </div>
+            <div class = "card" id="card2" style = "opacity: 0;">
+                <span><img src="./images/google.png" alt=""></span>
+                <h3>Software Developer</h3>
+                <div class = "text-card">
+                <ul>
+                    <li>
+                        <span>
+                            nda Gold. This required
+                            quickly getting familiar with new technologies such as 
+                            <em>Git</em>, 
+                            <em>Amazon Web Services</em>, 
+                            <em>Vue</em>,
+                            <em>Node JS</em>,
+                            <em>CLI</em>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            le pictures. User's information on a back-end
+                            created using Node and <em>MongoDB</em> with the front end being Vue.
+                        </span>
+                        
+                    </li>
+                    <li>
+                        <span>
+                            The  user posts which was greatly appreciated by 
+                            the team.
+                        </span>
+                       
+                    </li>
+                    <li>
+                        <span>
+                            DemVue and understanding the backend in <em>JS</em> and 
+                            <em>C++</em>.
+                        </span>
+                        
+                    </li>
+                    <li>
+                        <span>
+                            I was able to poet project needs. This was greatly appreciated and 
+                            acknowledged by the team.
+                        </span>
+                        
+                    </li>
+                </ul>
+            </div>
+            </div>
+            
         </div>
+        
     </div>
     
 <br><br>
@@ -187,7 +243,7 @@
     </div>
     
 
-    <div class="side_menu" style="padding-top: 15vh; overflow-y:scroll;">
+    <div class="side_menu" style="padding-top: 15vh; overflow-y:scroll; z-index: 3;">
         <div class="burger_box">
             <div class="menu-icon-container">
             </div>

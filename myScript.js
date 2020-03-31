@@ -19,6 +19,18 @@ function anch(arg) {
     }
 }
 
+/*** (2) Image Slider ***/
+function next() {
+	console.log('hi')
+	if (document.getElementById("card2").style.opacity == 0){
+		document.getElementById("card1").style.opacity = 0;
+		document.getElementById("card2").style.opacity = 100;
+	}
+	else {
+		document.getElementById("card1").style.opacity = 100;
+		document.getElementById("card2").style.opacity = 0;
+	}
+} 
 
 
 // Used reg expression to select all 'a' tags with their respective href tags  
