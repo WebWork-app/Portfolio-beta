@@ -2,7 +2,7 @@
 /* NAVBAR */
 nav {
     position: fixed;
-    z-index: 4;
+    z-index: 40;
 	width: 100%;
     background-color: rgba(22, 45, 61, 0.822);
     margin: 0 auto;
@@ -646,3 +646,19 @@ a,
 		background: rgba(255,255,255,.2);
     }
     
+    .work{
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        color: #333333;
+        margin:0;
+    }
+    .work-slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+
+    }
