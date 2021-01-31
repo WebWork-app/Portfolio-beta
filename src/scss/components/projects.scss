@@ -1,0 +1,47 @@
+#five ul .class img {
+    width: 6vw;
+    max-width: 30px;
+    margin-right: 10px;
+    height: auto;
+    border-radius: 50%;
+    border: solid rgb(59, 59, 59) 0.5px;
+    box-shadow:
+        1px 1px 2px 0 rgba(0, 0, 0, 0.603),
+        -1px -1px 2px 0 rgba(255, 255, 255, 0.849);
+}
+
+#five{
+    padding-top:20px;
+}
+
+#five ul{
+    overflow-y: scroll;
+    margin:20px;
+    height: 450px;
+    background-color: rgba(75, 75, 75, 0.068);
+    border-radius: 10px;
+    padding: 10px;
+}
+#five ul .class{
+    height: 200px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 23px;
+    padding: 30px 30px 30px 50px;
+    font-size: 13px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 0px;
+    color: #333333;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.11),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.336);
+    overflow-y: scroll;
+    cursor: pointer;
+    text-align: justify;
+    outline: 0;
+    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+#five h3 {
+    color: rgb(20, 60, 77);
+}

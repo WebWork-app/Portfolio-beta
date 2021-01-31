@@ -1,0 +1,93 @@
+@import "./helpers/variables.scss";
+
+.experience-section {
+    padding: $section-padding;
+    width: 100%;
+    max-width: fit-content;
+    margin: 0 auto;
+    height: auto;
+    box-shadow: $section-shadow;
+    border-radius: 20px;
+    .gaming {
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            padding: 30px 20px 20px 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px;
+            max-width: 700px;
+            min-width: 400px;
+            height: auto;
+            background-color: transparent;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.192);
+            transition: opacity 200ms ease-in-out;
+            h3 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .text-card {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+            bottom: 0;
+            overflow-y: scroll;
+            padding-bottom: $section-padding;
+        }
+        li {
+            font-size: 15px;
+            text-align: justify;
+            margin: 0 20px 10px 40px;
+            margin-top: 0;
+            list-style-position: outside;
+            color: rgba(19, 129, 255, 0.685);
+        }
+        ul {
+            display: contents;
+            justify-content: center;
+            span {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.781);
+            }
+        }
+        h3 {
+            font-weight: 500;
+        }
+    }
+}
+
+#three button {
+    border-radius: 50%;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    margin-top: 30px;
+    border: 0;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.11), -4px -4px 6px 0 rgba(255, 255, 255, 0.514);
+    transition: box-shadow 200ms ease-in-out;
+}
+
+#three button:hover {
+    background-color: rgba(22, 45, 61, 0.822);
+    box-shadow: 6px 6px 12px 0 rgba(3, 0, 29, 0.562), -4px -4px 6px 0 rgba(204, 224, 255, 0.705);
+    color: whitesmoke;
+}
+
+.work {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    color: #333333;
+    margin: 0;
+}
+.experience-logo {
+    width: 150px;
+    height: auto;
+}
