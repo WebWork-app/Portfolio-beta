@@ -8,7 +8,7 @@ function SectionCard() {
         <div class="main">
             <img src={Icon} />
             <div id="two" class="main-img">
-            <img class="top-img" src={bg} style={{ "max-width": "100%", "width": "100%", "position": "absolute", "left": 0, "top": 0,"transform":"rotate(0)" }} />
+                <img class="top-img" src={bg} style={{ "max-width": "100%", "width": "100%", "position": "absolute", "left": 0, "top": 0, "transform": "rotate(0)" }} />
                 <img class="bottom-img" src={bg} style={{ "max-width": "100%", "width": "100%", "position": "absolute", "left": 0, "bottom": 0 }} />
                 <h1>Saqib Ali</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
