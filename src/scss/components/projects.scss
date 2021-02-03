@@ -1,0 +1,114 @@
+.project-section {
+    width: 100%;
+    h2 {
+        margin: 0 auto;
+        font-weight: 400;
+        width: 100%;
+        color: $light-grey;
+        padding-top: 80px;
+    }
+    .projects {
+        .single {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            img {
+                @media (max-width: $mid-breakpoint) {
+                    margin: 0 auto;
+                    width: 70%;
+                }
+                display: block;
+                width: 50%;
+                height: auto;
+            }
+            .left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 40%;
+                top: 0;
+                h3 {
+                    color: grey;
+                }
+                @media (max-width: $mid-breakpoint) {
+                    margin: 0 auto;
+                    max-width: 100%;
+                }
+            }
+        }
+        .project-info {
+            max-width: 46%;
+            h3 {
+                margin: 0;
+                text-align: left;
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 30px;
+                font-weight: 400;
+                font-size: 15px;
+                color: grey;
+                text-align: left;
+            }
+            @media (max-width: $mid-breakpoint) {
+                margin: 30px 45px;
+                max-width: 100%;
+                h3 {
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+
+            ul {
+                display: contents;
+                justify-content: center;
+                li {
+                    font-size: 15px;
+                    text-align: justify;
+                    margin: 0 20px 5px 10px;
+                    margin-top: 0;
+                    list-style-position: outside;
+                    color: $main-accent;
+
+                    span {
+                        font-weight: 400;
+                        color: rgba(0, 0, 0, 0.781);
+                        font-size: 15px;
+                        color: grey;
+                    }
+                }
+                @media (max-width: $mid-breakpoint) {
+                    margin: 0 auto;
+                    max-width: 100%;
+                }
+            }
+            
+            .project-btns {
+                text-align: left;
+                margin-top: 30px;
+                .main-btn {
+                    background-color: $main-accent;
+                    color: $text-grey;
+                    width: auto;
+                    border-radius: 30px;
+                    border: 0;
+                    padding: 10px 20px;
+                }
+                @media (max-width: $mid-breakpoint) {
+                    text-align: center;
+                }
+            }
+        }
+        .project-info-greater {
+            max-width: 55%;
+            @media (max-width: $mid-breakpoint) {
+                max-width: 100%;
+            }
+        }
+    }
+}
