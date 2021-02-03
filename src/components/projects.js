@@ -7,7 +7,7 @@ function Project() {
 
     const projects = [
         {
-            "Playstation 5 skin":
+            "Playstation 5 Skin":
                 <>
                     Developed an interactive front-end which provides a clean interface to launch games
                     Implemented core functionality to launch, hide, sort, remove games using Python scripts

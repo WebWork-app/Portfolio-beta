@@ -6,3 +6,8 @@
 @import "./components/slider.scss";
 
 @import "./helpers/variables.scss";
+
+hr {
+    width: 70%;
+    background-color: $light-grey;
+}

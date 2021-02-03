@@ -16,7 +16,6 @@ function App() {
       <br />
       <hr />
       <Experience />
-      <hr />
       <Projects />
     </div>
   );
