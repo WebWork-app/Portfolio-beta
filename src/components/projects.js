@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowBarLeft, ArrowBarRight, Calendar2 } from "react-bootstrap-icons";
-import opentext from "./images/opentext.png";
+import ps5 from "./images/ps5-project.png";
 import wework from "./images/WeWork.png";
 
 function Project() {
@@ -9,19 +9,19 @@ function Project() {
         {
             "Playstation 5 skin":
                 <>
-                    <li>Developed an interactive front-end which provides a clean interface to launch games</li>
-                    <li>Implemented core functionality to launch, hide, sort, remove games using Python scripts</li>
-                    <li>UI styling and interactivity was implemented using Kodi</li>
-                    <li>Incorporated the Xinput api to report information regarding controllers in UI</li>
-                    <li>The skin can be viewed here: Play Station 5 Skin</li>
+                    Developed an interactive front-end which provides a clean interface to launch games
+                    Implemented core functionality to launch, hide, sort, remove games using Python scripts
+                    UI styling and interactivity was implemented using Kodi
+                    Incorporated the Xinput api to report information regarding controllers in UI
+                    The skin can be viewed here: Play Station 5 Skin
                 </>
         },
         {
             "Snake Game":
                 <>
-                    <li>Built a clone of the classic addictive game: Snake</li>
-                    <li>Implemented core game logic and visuals using C++</li>
-                    <li>Incorporated fundamental OOP principles to provide a clear modular structure</li>
+                    Built a clone of the classic addictive game: Snake
+                    Implemented core game logic and visuals using C++
+                    Incorporated fundamental OOP principles to provide a clear modular structure
                 </>
         },
         {
@@ -37,21 +37,28 @@ function Project() {
     useEffect(() => {
     }, [])
     return (
-        <div id="five" class="experience-section">
-            <h1>Projects</h1>
-            <div class="gaming" >
+        <div class="project-section">
+            <h2>Projects</h2>
+            <div class="projects" >
                 {
                     projects.map((project) => {
                         return (
-                            <div class="card">
-                                <h3>{Object.entries(project)[0][0]}</h3>
-                                <br />
-                                <div class="text-card">
-                                    <ul>
-                                        {Object.entries(project)[0][1]}
-                                    </ul>
+                            <>
+                                <div class="single">
+                                    <img src={ps5} />
+                                    <div class="project-info">
+                                        <h3>{Object.entries(project)[0][0]}</h3>
+                                        <br />
+                                        <p>
+                                            {Object.entries(project)[0][1]}
+                                        </p>
+                                        <div class="project-btns">
+                                            <button class="main-btn">Preview</button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                                <hr />
+                            </>
                         )
                     })
                 }

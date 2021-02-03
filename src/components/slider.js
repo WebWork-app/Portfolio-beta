@@ -17,15 +17,15 @@ function Slider() {
             { 'Java Script': JS },
             { 'Python': Python },
             { 'Html': HTML },
-            { 'CSS': Css },
+            { 'Sass': Css },
             { 'React': React },
             { 'Spring': Spring },
         ]
     return (
         <div class="slider-container">
-            <h1 class="slider-header">
+            <h2 class="slider-header">
                 Technologies
-            </h1>
+            </h2>
             <div class="slider">
                 {
                     technolgies.map((technolgy) => {
