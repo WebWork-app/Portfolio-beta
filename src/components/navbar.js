@@ -2,21 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 import { HouseDoorFill, PersonBadge, BriefcaseFill, BookFill, Mailbox, Mailbox2 } from "react-bootstrap-icons";
 function Navbar() {
-    // TODO: change navbar when scrolling
-    const changeNavColor = () => {
-        let element = document.getElementById("navbar");
-        if (element != null) {
-            console.log(element.scrollHeight);
-            if (element.scrollTop == 0) {
-                element.className = "";
-            }
-            else {
-                element.className = "nav-scrolling";
-            }
-        }
-    }
     return (
-        <nav id="navbar" onscroll={changeNavColor()}>
+        <nav id="navbar" class="nav-scrolling">
             <div class="nav-left">
                 SA
             </div>
@@ -26,12 +13,12 @@ function Navbar() {
                         <span>About</span>
                     </li>
                 </a>
-                <a href="#four">
+                <a href="#three">
                     <li>
                         <span>Work Experience</span>
                     </li>
                 </a>
-                <a href="#three">
+                <a href="#four">
                     <li>
                         <span>Projects</span>
                     </li>
