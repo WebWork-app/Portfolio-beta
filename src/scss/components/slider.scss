@@ -30,6 +30,10 @@
             box-shadow: $raised-shadow;
             margin-right: 10px;
             margin-left: 5px;
+            @media (max-width: $mid-breakpoint) {
+                height: 25px;
+                width: 25px;
+            }
         }
     }
 }

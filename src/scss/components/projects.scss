@@ -21,7 +21,7 @@
                 }
                 display: block;
                 width: 50%;
-                height: fit-content;
+                height: auto;
             }
             .left {
                 display: flex;
@@ -54,7 +54,7 @@
                 text-align: left;
             }
             @media (max-width: $mid-breakpoint) {
-                margin: 30px 80px;
+                margin: 30px 45px;
                 max-width: 100%;
                 h3 {
                     text-align: center;
@@ -63,8 +63,6 @@
                     text-align: center;
                 }
             }
-
-            
 
             ul {
                 display: contents;
