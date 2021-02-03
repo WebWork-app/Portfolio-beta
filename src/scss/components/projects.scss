@@ -16,13 +16,13 @@
             padding-bottom: 80px;
             justify-content: center;
             img {
+                display: block;
+                width: 36%;
+                max-height: auto;
                 @media (max-width: $mid-breakpoint) {
                     margin: 0 auto;
                     width: 70%;
                 }
-                display: block;
-                width: 36%;
-                height: auto;
             }
             .left {
                 display: flex;
