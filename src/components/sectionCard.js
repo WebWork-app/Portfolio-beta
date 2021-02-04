@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Icon from "./images/profile.jpg";
 import bg from "./images/body-wave2.png"
+import resume from "./files/Resume 2A.docx.pdf"
 function SectionCard() {
     return (
         <div class="main">
@@ -25,7 +26,8 @@ function SectionCard() {
                     </a>
                     <a
                         class="resume"
-                        href="https://drive.google.com/file/d/1fZ_0gAez0xKIszxyxK4KE3VPf8e_hNG8/view?usp=sharing"
+                        href={resume}
+                        type="application/pdf" target="_blank"
                     >
                         Resume
                     </a>
