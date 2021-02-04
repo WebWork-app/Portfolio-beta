@@ -7,13 +7,19 @@ nav {
     justify-content: space-between;
     align-items: center;
     transition: color 200ms ease, background-color 200ms ease;
-    top: 0;
     left: 0;
     outline: none;
     transition: 0.25s padding-top ease-in-out, 0.25s padding-bottom ease-in-out;
 }
 .nav-scrolling {
     background-color:#7217e4;
+    box-shadow: $raised-shadow;
+    top:-10px;
+    transition: 200ms background-color ease-in-out;
+}
+.trans{
+    background-color: transparent;
+    transition: 200ms background-color ease-in-out;
 }
 .nav-left {
     margin-left: 20px;
