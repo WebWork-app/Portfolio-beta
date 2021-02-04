@@ -4,7 +4,6 @@
     border-radius: 0;
     background: linear-gradient(to bottom, #7a19f1, #332179);
     img {
-        z-index: 111;
         border-radius: 50%;
         position: fixed;
         width: 80px;
@@ -12,7 +11,7 @@
         bottom: 30px;
         right: 30px;
     }
-    
+
     #two {
         min-height: 100%;
         height: 600px;
@@ -34,7 +33,7 @@
             text-transform: uppercase;
             text-align: center;
             margin: 0;
-            .aspire{
+            .aspire {
                 color: $yellow;
                 font-weight: 500;
                 margin-bottom: 0;
@@ -48,7 +47,7 @@
             line-height: 1.6;
             margin-right: auto;
             margin-left: auto;
-            padding:0 80px;
+            padding: 0 80px;
             @media (max-width: $mid-breakpoint) {
                 font-size: 16px;
             }
@@ -67,23 +66,44 @@
 }
 
 #two {
-    .section-btns {
-        background-color: transparent;
-        margin: 20px 10px 0 10px;
-        font-weight: 400;
-        border-radius: 10px;
-        border: none;
-        padding: 15px 25px;
-        color: $text-black;
-        font-size: 20px;
-    }
-    .mail {
-        background-image: $yellow-gradient;
-        box-shadow: $raised-shadow;
-    }
-    .resume {
-        color: $text-grey;
-        border: solid 2px $text-grey;
+    .section-container-btns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 20;
+        a {
+            background-color: transparent;
+            margin: 20px 10px 0 10px;
+            font-weight: 400;
+            border-radius: 10px;
+            border: none;
+            padding: 15px 25px;
+            color: $text-black;
+            font-size: 20px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .mail {
+            background-image: $yellow-gradient;
+            background-color: #d1b204;
+            box-shadow: $raised-shadow;
+            transition: 200ms background-color ease-out;
+        }
+        .resume {
+            color: $text-grey;
+            border: solid 2px $text-grey;
+            transition: 200ms background-color ease-out, 200ms border ease-in-out, 200ms color ease-in-out;
+        }
+        .resume:hover {
+            background-color: #332179;
+            border: solid 2px $yellow;
+            color: $yellow;
+        }
+        .mail:hover{
+            background-image: none;
+            background-color: $yellow;
+        }
     }
 }
 #two img {

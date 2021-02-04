@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import working from "./images/working.gif";
 import Icon from "./images/profile.jpg";
 import bg from "./images/body-wave2.png"
-import { HouseDoorFill, PersonBadge, BriefcaseFill, BookFill, Mailbox, Mailbox2 } from "react-bootstrap-icons";
 function SectionCard() {
     return (
         <div class="main">
@@ -22,12 +20,15 @@ function SectionCard() {
                     me here:
                 </p>
                 <div class="section-container-btns">
-                    <button class="section-btns mail">
+                    <a class="mail">
                         Email Me
-                    </button>
-                    <button class="section-btns resume">
+                    </a>
+                    <a
+                        class="resume"
+                        href="https://drive.google.com/file/d/1fZ_0gAez0xKIszxyxK4KE3VPf8e_hNG8/view?usp=sharing"
+                    >
                         Resume
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
