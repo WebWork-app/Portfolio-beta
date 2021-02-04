@@ -40,7 +40,8 @@ nav {
         padding: 15px 20px;
         position: relative;
         @media (max-width: $min-breakpoint) {
-            font-size:8px;
+            font-weight: 400;
+            font-size:11px;
         }
     } 
     a:after {

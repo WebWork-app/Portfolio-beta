@@ -19,6 +19,7 @@
             img {
                 display: block;
                 width: 36%;
+                height: auto;
                 max-height: auto;
                 @media (max-width: $mid-breakpoint) {
                     margin: 0 auto;

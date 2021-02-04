@@ -15,7 +15,7 @@ function Navbar() {
                 </a>
                 <a href="#three">
                     <li>
-                        <span>Work Experience</span>
+                        <span>Experience</span>
                     </li>
                 </a>
                 <a href="#four">

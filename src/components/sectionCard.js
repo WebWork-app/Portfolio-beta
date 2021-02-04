@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import working from "./images/working.gif";
-import Icon from "./images/Profile.jpg";
+import Icon from "./images/profile.jpg";
 import bg from "./images/body-wave2.png"
 import { HouseDoorFill, PersonBadge, BriefcaseFill, BookFill, Mailbox, Mailbox2 } from "react-bootstrap-icons";
 function SectionCard() {
@@ -10,8 +10,17 @@ function SectionCard() {
             <div id="two" class="main-img">
                 <img class="top-img" src={bg} style={{ "max-width": "100%", "width": "100%", "position": "absolute", "left": 0, "top": 0, "transform": "rotate(0)" }} />
                 <img class="bottom-img" src={bg} style={{ "max-width": "100%", "width": "100%", "position": "absolute", "left": 0, "bottom": 0 }} />
-                <h1>Saqib Ali</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+                <h1>
+                    SAQIB ALI
+                    <br />
+                    <p class="aspire">An Aspring Software Engineer</p>
+                </h1>
+                <p>
+                    An undergraduate student at the university of waterloo completing
+                    bachelor's in computer engineering with a strong passion for
+                    software development. If you are looking to hire, please contact
+                    me here:
+                </p>
                 <div class="section-container-btns">
                     <button class="section-btns mail">
                         Email Me
