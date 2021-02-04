@@ -34,9 +34,9 @@ function Slider() {
                                 <img
                                     src={Object.entries(technolgy)[0][1]}
                                     class="slider-img" />
-                                <p>
+                                <h2>
                                     {Object.entries(technolgy)[0][0]}
-                                </p>
+                                </h2>
                             </div>
                         )
                     })
