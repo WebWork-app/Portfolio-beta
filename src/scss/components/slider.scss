@@ -31,11 +31,11 @@
         .slider-img {
             height: 50px;
             width: 50px;
-            background-color: $main-accent-light;
+            background-color: white;
             padding: 10px;
             border-radius: 50%;
-            border: solid 5px $main-accent-light;
-            box-shadow: $raised-shadow;
+            border: solid 5px #5b43d682;
+            box-shadow: 0 0 20px $main-accent;
             margin-right: 10px;
             margin-left: 5px;
             @media (max-width: $mid-breakpoint) {
