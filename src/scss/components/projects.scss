@@ -53,10 +53,11 @@
                 margin-top: 0;
                 margin-bottom: 30px;
                 font-weight: 400;
-                font-size: 15px;
+                font-size: 17px;
                 max-width: 400px;
                 color: grey;
                 text-align: left;
+                line-height: 1.5;
             }
             @media (max-width: $mid-breakpoint) {
                 margin: 30px 45px;
