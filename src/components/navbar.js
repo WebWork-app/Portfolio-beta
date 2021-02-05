@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { HouseDoorFill, PersonBadge, BriefcaseFill, BookFill, Mailbox, Mailbox2 } from "react-bootstrap-icons";
 function Navbar() {
     return (
-        <nav id="navbar" class="nav-scrolling">
+        <nav id="navbar" class="trans">
             <div class="nav-left">
                 SA
             </div>

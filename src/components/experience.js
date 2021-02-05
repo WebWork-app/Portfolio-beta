@@ -116,7 +116,7 @@ function Experience() {
     return (
         <>
             <div id="three" class="project-section">
-                <h2>Experience</h2>
+                <h2 style={{"padding-top":"40px"}}>Experience</h2>
                 <div class="projects" >
                     {
                         experiences.map((project) => {
@@ -127,13 +127,10 @@ function Experience() {
                                             <img class="first" src={Object.entries(project)[0][1][0]} />
                                             <h3>
                                                 {Object.entries(project)[0][1][1]}
-                                                <br />
                                                 <h5><Calendar2 /> <i>{Object.entries(project)[0][1][2]}</i></h5>
                                             </h3>
                                         </div>
                                         <div class="project-info project-info-greater">
-                                            <h3>{Object.entries(project)[0][0]}</h3>
-                                            <br />
                                             <ul>
                                                 {Object.entries(project)[0][1][3]}
                                             </ul>

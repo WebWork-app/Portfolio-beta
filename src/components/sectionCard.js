@@ -34,7 +34,9 @@ function SectionCard() {
                     me here:
                 </p>
                 <div class="section-container-btns">
-                    <a class="mail">
+                    <a
+                        href="mailto:saqibalip321@gmail.com"
+                        class="mail">
                         Email Me
                     </a>
                     <a

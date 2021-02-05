@@ -9,7 +9,9 @@
 
 hr {
     width: 70%;
-    background-color: $light-grey;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-color: #d6d6d6
 }
 button:hover{
     cursor: pointer;

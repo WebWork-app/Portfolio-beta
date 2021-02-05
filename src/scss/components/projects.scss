@@ -5,14 +5,13 @@
         font-weight: 400;
         width: 100%;
         color: $light-grey;
-        padding-top: 80px;
     }
     .projects {
         .single {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            padding-top: 80px;
+            padding-top: 40px;
             padding-bottom: 80px;
             justify-content: center;
             align-items: center;
@@ -39,6 +38,7 @@
                 @media (max-width: $mid-breakpoint) {
                     margin: 0 auto;
                     max-width: 100%;
+                    width: 80%;
                 }
             }
         }
@@ -64,7 +64,7 @@
                 h3 {
                     text-align: center;
                 }
-                p{
+                p {
                     text-align: center;
                 }
             }
@@ -92,7 +92,7 @@
                     max-width: 100%;
                 }
             }
-            
+
             .project-btns {
                 text-align: left;
                 margin-top: 30px;
@@ -113,8 +113,9 @@
         .project-info-greater {
             width: 55%;
             max-width: 700px;
+            margin-top: 0px;
             @media (max-width: $mid-breakpoint) {
-                width:100%;
+                width: 100%;
                 max-width: 100%;
             }
         }

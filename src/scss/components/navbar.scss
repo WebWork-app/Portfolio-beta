@@ -9,12 +9,12 @@ nav {
     transition: color 200ms ease, background-color 200ms ease;
     left: 0;
     outline: none;
+    height: 70px;
     transition: 0.25s padding-top ease-in-out, 0.25s padding-bottom ease-in-out;
 }
 .nav-scrolling {
     background-color:#7217e4;
     box-shadow: $raised-shadow;
-    top:-10px;
     transition: 200ms background-color ease-in-out;
 }
 .trans{
