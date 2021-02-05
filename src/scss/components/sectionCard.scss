@@ -25,11 +25,19 @@
             height: 200px;
             left: 0;
             bottom: 0;
-            transition: 2000ms left ease-out;
+            transition: 5000ms left ease-out;
         }
         .sli {
             left: -100%;
-            transition: 3000ms left ease-out;
+            transition: 5000ms left ease-out;
+        }
+        .top-img{
+            left: 0;
+            transition: 1000ms left ease-out;
+        }
+        .sli2 {
+            left: -100%;
+            transition: 1000ms left ease-out;
         }
         h1 {
             font-family: "Roboto Condensed", sans-serif;

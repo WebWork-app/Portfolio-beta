@@ -7,13 +7,15 @@ function SectionCard() {
     window.addEventListener('scroll', () => {
         if (window.scrollY < 50) {
             document.getElementById("navbar").className = "trans";
-            document.getElementById("imagee").className = "sli top-img";
+            document.getElementById("imagee").className = "sli2 top-img";
             document.getElementById("imagee2").className = "sli bottom-img";
+            document.getElementById("imagee3").className = "sli2 bottom-img";
         }
         else if (window.scrollY > 50) {
             document.getElementById("navbar").className = "nav-scrolling";
             document.getElementById("imagee").className = "top-img";
             document.getElementById("imagee2").className = "bottom-img";
+            document.getElementById("imagee3").className = "bottom-img";
         }
     })
     return (
@@ -22,6 +24,7 @@ function SectionCard() {
             <div id="two" class="main-img">
                 <img id="imagee" class="top-img" src={bg} style={{ "max-width": "200%", "width": "200%", "position": "absolute", "top": 0, "transform": "rotate(0)" }} />
                 <img id="imagee2" class="bottom-img" src={bg} style={{ "max-width": "200%", "width": "200%", "position": "absolute", "bottom": 0 }} />
+                <img id="imagee3" class="bottom-img" src={bg} style={{ "max-width": "200%", "width": "200%", "position": "absolute", "bottom": 0 }} />
                 <h1>
                     SAQIB ALI
                     <br />
