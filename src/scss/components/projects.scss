@@ -104,20 +104,37 @@
                     border-radius: 30px;
                     border: 0;
                     font-size: 16px;
-                    width:120px;
+                    width:100px;
                     align-items:center;
                     display: flex;
                     text-decoration: none;
                     font-size: 17px;
                     font-weight: 400;
                     padding: 10px;
+                    transition: 0.25s width ease-in-out;
                     @media (max-width: $mid-breakpoint) {
                         margin:0 auto;
+                    }
+                    .arrow{
+                        display: none;
+                        transition: 0.25s display ease-in-out;
+                    }
+                    &:hover{
+                        width: 120px;
+                        .arrow{
+                            display: block;
+                        }
                     }
                 }
                 .disabled{
                     background-color: #80808046;
                     cursor: default;
+                    &:hover{
+                        width: 100px;
+                        .arrow{
+                            display: none;
+                        }
+                    }
                 }
             }
         }

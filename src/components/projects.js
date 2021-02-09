@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Github } from "react-bootstrap-icons";
+import { Github, CaretRightFill } from "react-bootstrap-icons";
 import ps5 from "./images/ps5-project.png";
 import pwa from "./images/project-pwa.png";
 import snake from "./images/projects-snake.png";
@@ -84,6 +84,7 @@ function Project() {
                                                 class={(Object.entries(project)[0][1][2] == "") ? ("disabled main-btn"):("main-btn")}>
                                                 <Github style={{ "padding-right": "10px" }} size={30} />
                                                 Github
+                                                <CaretRightFill style={{"padding-left":"10px"}} class="arrow" size={20} />
                                             </a>
                                         </div>
                                     </div>
