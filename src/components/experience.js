@@ -134,9 +134,6 @@ function Experience() {
                                             <ul>
                                                 {Object.entries(project)[0][1][3]}
                                             </ul>
-                                            <div class="project-btns">
-                                                <button class="main-btn">Preview</button>
-                                            </div>
                                         </div>
                                     </div>
                                     <hr />

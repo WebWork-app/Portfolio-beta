@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowBarLeft, ArrowBarRight, Calendar2 } from "react-bootstrap-icons";
+import { Github } from "react-bootstrap-icons";
 import ps5 from "./images/ps5-project.png";
 import pwa from "./images/project-pwa.png";
 import snake from "./images/projects-snake.png";
 import portfolio from "./images/project-online.png";
-import wework from "./images/WeWork.png";
 
 function Project() {
 
@@ -18,7 +17,8 @@ function Project() {
                     UI styling and interactivity was implemented using Kodi
                     Incorporated the Xinput api to report information regarding controllers in UI
                     The skin can be viewed here: Play Station 5 Skin
-                </>
+                </>,
+                "PlayStation-5-Kodi-Skin"
             ]
 
         },
@@ -30,7 +30,8 @@ function Project() {
                     UI Interactivity was implemented using the React framework and styling using SASS
                     Implemented the backend using Java and Spring boot which handles front-end requests
 
-                </>
+                </>,
+                "Qalculater"
             ]
 
         },
@@ -41,7 +42,8 @@ function Project() {
                     Built a clone of the classic addictive game: Snake
                     Implemented core game logic and visuals using C++
                     Incorporated fundamental OOP principles to provide a clear modular structure
-                </>
+                </>,
+                ""
             ]
         },
         {
@@ -51,7 +53,8 @@ function Project() {
                     Web Developement has been my passion for some time now! I created this responsive website using
                     HTML,
                     CSS, JavaSCript with some Jquery!
-                </>
+                </>,
+                "SaqibA1i.github.io"
             ]
 
         }
@@ -76,7 +79,12 @@ function Project() {
                                             {Object.entries(project)[0][1][1]}
                                         </p>
                                         <div class="project-btns">
-                                            <button class="main-btn">Preview</button>
+                                            <a
+                                                href={(Object.entries(project)[0][1][2] == "") ? ("javascript:void(0)"):("https://github.com/SaqibA1i/"+Object.entries(project)[0][1][2])}
+                                                class={(Object.entries(project)[0][1][2] == "") ? ("disabled main-btn"):("main-btn")}>
+                                                <Github style={{ "padding-right": "10px" }} size={30} />
+                                                Github
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
