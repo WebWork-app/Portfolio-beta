@@ -22,7 +22,7 @@ function SectionCard() {
                 <h1>
                     SAQIB ALI
                     <br />
-                    <p class="aspire">An Aspring Software Engineer</p>
+                    <p class="aspire">An Aspiring Software Engineer</p>
                 </h1>
                 <p>
                     A student of computer engineering with a strong passion for
