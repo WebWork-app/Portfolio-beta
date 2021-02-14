@@ -2,60 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { ArrowBarLeft, ArrowBarRight, Calendar2 } from "react-bootstrap-icons";
 import opentext from "./images/opentext.png";
 import wework from "./images/WeWork.png";
-import ps5 from "./images/ps5-project.png";
+import cgi from "./images/cgi.png";
 function Experience() {
     const experiences = [
         {
-            "We Work": [wework, <>Software Engineering Intern</>, <>Jan 2020 - April 2020</>,
-                <>
-                    <li>
-                        <span>
-                            Identified, documented and reported bugs along with other issues
-                            within the software database of Propaganda Gold. This required
-                            quickly getting familiar with new technologies such as
-                                <em>Git</em>,
-                                <em>Amazon Web Services</em>,
-                                <em>Vue</em>,
-                                <em>Node JS</em>,
-                                <em>CLI</em>
-                        </span>
-                    </li>
-                    <li>
-                        <span>
-                            Took initiative to develop a <em>Restful API</em> demo for the purpose of
-                                uploading user profile pictures. User's information on a back-end
-                                created using Node and <em>MongoDB</em> with the front end being Vue.
-                        </span>
-
-                    </li>
-                    <li>
-                        <span>
-                            The successful completion of the user demo allowed me to upload
-                            videos and images for user posts which was greatly appreciated by
-                            the team.
-                        </span>
-
-                    </li>
-                    <li>
-                        <span>
-                            Demonstrated responsibility and initiative to develop the front end
-                            of the social media app along with the lead engineer. This involved
-                                coding the front end in Vue and understanding the backend in <em>JS</em> and
-                                <em>C++</em>.
-                        </span>
-
-                    </li>
-                    <li>
-                        <span>
-                            I was able to port over the front end web application demo from Angular
-                            to Vue in order to meet project needs. This was greatly appreciated and
-                            acknowledged by the team.
-                        </span>
-
-                    </li>
-                </>
-
-            ]
+            "CGI": [cgi, <>Developer</>, <>May 2021 - August 2021</>,
+            <>
+            <h2><em>Currently employed</em></h2>
+            </>]
         },
         {
             "Open Text": [opentext, <>Software Developer</>, <>Sept 2020 - Dec 2020</>,
@@ -110,6 +64,58 @@ function Experience() {
 
             ]
         },
+        {
+            "We Work": [wework, <>Software Engineering Intern</>, <>Jan 2020 - April 2020</>,
+                <>
+                    <li>
+                        <span>
+                            Identified, documented and reported bugs along with other issues
+                            within the software database of Propaganda Gold. This required
+                            quickly getting familiar with new technologies such as
+                                <em>Git</em>,
+                                <em>Amazon Web Services</em>,
+                                <em>Vue</em>,
+                                <em>Node JS</em>,
+                                <em>CLI</em>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            Took initiative to develop a <em>Restful API</em> demo for the purpose of
+                                uploading user profile pictures. User's information on a back-end
+                                created using Node and <em>MongoDB</em> with the front end being Vue.
+                        </span>
+
+                    </li>
+                    <li>
+                        <span>
+                            The successful completion of the user demo allowed me to upload
+                            videos and images for user posts which was greatly appreciated by
+                            the team.
+                        </span>
+
+                    </li>
+                    <li>
+                        <span>
+                            Demonstrated responsibility and initiative to develop the front end
+                            of the social media app along with the lead engineer. This involved
+                                coding the front end in Vue and understanding the backend in <em>JS</em> and
+                                <em>C++</em>.
+                        </span>
+
+                    </li>
+                    <li>
+                        <span>
+                            I was able to port over the front end web application demo from Angular
+                            to Vue in order to meet project needs. This was greatly appreciated and
+                            acknowledged by the team.
+                        </span>
+
+                    </li>
+                </>
+
+            ]
+        },      
     ]
     useEffect(() => {
     }, [])
