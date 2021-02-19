@@ -14,7 +14,7 @@ function SectionCard() {
     })
     return (
         <div class="main">
-            <img src={Icon} />
+            <img style={{"z-index":"1300"}}src={Icon} />
             <div id="two" class="main-img">
                 <img id="image1" class="top-img"    src={bg} style={{ "max-width": "200%", "width": "200%", "position": "absolute", "top": 0, "transform": "rotate(0)" }} />
                 <img id="image2" class="bottom-img" src={bg} style={{ "max-width": "200%", "width": "200%", "position": "absolute", "bottom": 0 }} />
