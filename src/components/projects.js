@@ -84,9 +84,9 @@ function Project() {
     useEffect(() => {
     }, [])
     return (
-        <div id="four" class="project-section">
-            <h2>Projects</h2>
-            <div class="projects" style={{ "max-width": "2100px", "margin": "0 auto" }}>
+        <div id="four" class="project-section"  >
+            <h2 style={{"background-color":"white"}}>Projects</h2>
+            <div class="projects" style={{ "background-color":"white", "max-width": "2100px", "margin": "0 auto", }}>
                 <Carousel
                     width="inherit"
                     {...getConfigurableProps()}
@@ -95,7 +95,7 @@ function Project() {
                         projects.map((project) => {
                             return (
                                 <>
-                                    <div class="single">
+                                    <div class="single" >
                                         <img src={Object.entries(project)[0][1][0]} />
                                         <div class="project-info">
                                             <h3>{Object.entries(project)[0][0]}</h3>

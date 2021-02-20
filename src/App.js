@@ -14,9 +14,7 @@ function App() {
       <SectionCard />
       <Slider />
       <br />
-      <hr />
       <Experience />
-      <hr />
       <Projects />
       <hr />
     </div>

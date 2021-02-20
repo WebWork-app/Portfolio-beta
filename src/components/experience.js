@@ -3,7 +3,7 @@ import { ArrowBarLeft, ArrowBarRight, Calendar2 } from "react-bootstrap-icons";
 import opentext from "./images/opentext.png";
 import wework from "./images/WeWork.png";
 import cgi from "./images/cgi.png";
-
+import wave4 from "./images/wave4.svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
@@ -20,7 +20,7 @@ const getConfigurableProps = () => ({
     dynamicHeight: false,
     emulateTouch: true,
     thumbWidth: 200,
-    selectedItem: 0,
+    selectedItem: 1,
     interval: 10000,
     transitionTime:300,
     swipeScrollTolerance: 100,
@@ -143,9 +143,10 @@ function Experience() {
     useEffect(() => {
     }, [])
     return (
-        <>
+        <div style={{"overflow": "hidden"}}>
+        <img src={wave4} class="top-wave"/>
             <div id="three" class="project-section">
-                <h2 style={{ "padding-top": "40px" }}>Experience</h2>
+                <h2>Experience</h2>
                 <div class="projects" style={{"max-width":"2100px", "margin":"0 auto"}}>
                     <Carousel
                         width="inherit"
@@ -176,7 +177,7 @@ function Experience() {
                     </Carousel>
                 </div>
             </div>
-        </>
+        </div>
     )
 
 }

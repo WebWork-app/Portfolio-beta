@@ -1,1 +1,11 @@
 @import "./helpers/variables.scss";
+.top-wave{
+    animation: bottom-wave 5s infinite alternate-reverse;
+    margin-bottom:-4px;
+    width:200%;
+    left:-100%;
+    opacity: 0.09;
+    position: relative;
+    height: 30px;
+    z-index:-10;
+}
