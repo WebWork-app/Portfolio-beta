@@ -21,7 +21,7 @@ const getConfigurableProps = () => ({
     emulateTouch: true,
     thumbWidth: 200,
     selectedItem: 0,
-    interval: 3000,
+    interval: 10000,
     transitionTime:300,
     swipeScrollTolerance: 5,
 });
