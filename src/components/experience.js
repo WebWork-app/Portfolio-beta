@@ -3,13 +3,36 @@ import { ArrowBarLeft, ArrowBarRight, Calendar2 } from "react-bootstrap-icons";
 import opentext from "./images/opentext.png";
 import wework from "./images/WeWork.png";
 import cgi from "./images/cgi.png";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+const getConfigurableProps = () => ({
+    showArrows: true,
+    showStatus: false,
+    showIndicators:true,
+    infiniteLoop:true,
+    showThumbs: false,
+    useKeyboardArrows: false,
+    autoPlay:false,
+    stopOnHover: true,
+    swipeable: true,
+    dynamicHeight: false,
+    emulateTouch: true,
+    thumbWidth: 200,
+    selectedItem: 0,
+    interval: 3000,
+    transitionTime:300,
+    swipeScrollTolerance: 5,
+});
+
 function Experience() {
     const experiences = [
         {
             "CGI": [cgi, <>Developer</>, <>May 2021 - August 2021</>,
-            <>
-            <h2><em>Currently employed</em></h2>
-            </>]
+                <>
+                    <h2><em>Currently employed</em></h2>
+                </>]
         },
         {
             "Open Text": [opentext, <>Software Developer</>, <>Sept 2020 - Dec 2020</>,
@@ -115,38 +138,42 @@ function Experience() {
                 </>
 
             ]
-        },      
+        },
     ]
     useEffect(() => {
     }, [])
     return (
         <>
             <div id="three" class="project-section">
-                <h2 style={{"padding-top":"40px"}}>Experience</h2>
-                <div class="projects" >
-                    {
-                        experiences.map((project) => {
-                            return (
-                                <>
-                                    <div class="single">
-                                        <div class="left">
-                                            <img class="first" src={Object.entries(project)[0][1][0]} />
-                                            <h3>
-                                                {Object.entries(project)[0][1][1]}
-                                                <h5><Calendar2 /> <i>{Object.entries(project)[0][1][2]}</i></h5>
-                                            </h3>
+                <h2 style={{ "padding-top": "40px" }}>Experience</h2>
+                <div class="projects" style={{"max-width":"2100px", "margin":"0 auto"}}>
+                    <Carousel
+                        width="inherit"
+                        {...getConfigurableProps()}
+                    >
+                        {
+                            experiences.map((project) => {
+                                return (
+                                    <>
+                                        <div class="single">
+                                            <div class="left">
+                                                <img class="first" src={Object.entries(project)[0][1][0]} />
+                                                <h3>
+                                                    {Object.entries(project)[0][1][1]}
+                                                    <h5><Calendar2 /> <i>{Object.entries(project)[0][1][2]}</i></h5>
+                                                </h3>
+                                            </div>
+                                            <div class="project-info project-info-greater">
+                                                <ul>
+                                                    {Object.entries(project)[0][1][3]}
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div class="project-info project-info-greater">
-                                            <ul>
-                                                {Object.entries(project)[0][1][3]}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                </>
-                            )
-                        })
-                    }
+                                    </>
+                                )
+                            })
+                        }
+                    </Carousel>
                 </div>
             </div>
         </>

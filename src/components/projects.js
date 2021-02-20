@@ -5,6 +5,27 @@ import pwa from "./images/project-pwa.png";
 import snake from "./images/projects-snake.png";
 import portfolio from "./images/project-online.png";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+const getConfigurableProps = () => ({
+    showArrows: true,
+    showStatus: false,
+    showIndicators: true,
+    infiniteLoop: true,
+    showThumbs: false,
+    useKeyboardArrows: false,
+    autoPlay: false,
+    stopOnHover: true,
+    swipeable: true,
+    dynamicHeight: false,
+    emulateTouch: true,
+    thumbWidth: 200,
+    selectedItem: 0,
+    interval: 3000,
+    transitionTime: 300,
+    swipeScrollTolerance: 5,
+});
 function Project() {
 
     const projects = [
@@ -65,35 +86,39 @@ function Project() {
     return (
         <div id="four" class="project-section">
             <h2>Projects</h2>
-            <div class="projects" >
-                {
-                    projects.map((project) => {
-                        return (
-                            <>
-                                <div class="single">
-                                    <img src={Object.entries(project)[0][1][0]} />
-                                    <div class="project-info">
-                                        <h3>{Object.entries(project)[0][0]}</h3>
-                                        <br />
-                                        <p>
-                                            {Object.entries(project)[0][1][1]}
-                                        </p>
-                                        <div class="project-btns">
-                                            <a
-                                                href={(Object.entries(project)[0][1][2] == "") ? ("javascript:void(0)"):("https://github.com/SaqibA1i/"+Object.entries(project)[0][1][2])}
-                                                class={(Object.entries(project)[0][1][2] == "") ? ("disabled main-btn"):("main-btn")}>
-                                                <Github style={{ "padding-right": "10px"}} size={30} />
+            <div class="projects" style={{ "max-width": "2100px", "margin": "0 auto" }}>
+                <Carousel
+                    width="inherit"
+                    {...getConfigurableProps()}
+                >
+                    {
+                        projects.map((project) => {
+                            return (
+                                <>
+                                    <div class="single">
+                                        <img src={Object.entries(project)[0][1][0]} />
+                                        <div class="project-info">
+                                            <h3>{Object.entries(project)[0][0]}</h3>
+                                            <br />
+                                            <p>
+                                                {Object.entries(project)[0][1][1]}
+                                            </p>
+                                            <div class="project-btns">
+                                                <a
+                                                    href={(Object.entries(project)[0][1][2] == "") ? ("javascript:void(0)") : ("https://github.com/SaqibA1i/" + Object.entries(project)[0][1][2])}
+                                                    class={(Object.entries(project)[0][1][2] == "") ? ("disabled main-btn") : ("main-btn")}>
+                                                    <Github style={{ "padding-right": "10px" }} size={30} />
                                                 Github
-                                                <CaretRightFill style={{"padding-left":"10px"}} class="arrow" size={20} />
-                                            </a>
+                                                <CaretRightFill style={{ "padding-left": "10px" }} class="arrow" size={25} />
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <hr />
-                            </>
-                        )
-                    })
-                }
+                                </>
+                            )
+                        })
+                    }
+                </Carousel>
             </div>
         </div>
     )

@@ -6,7 +6,28 @@
         width: 100%;
         color: $light-grey;
     }
+    li.slide{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .carousel .control-next.control-arrow:before {
+        border-left: 8px solid $main-accent;
+    }
+    .carousel .control-prev.control-arrow:before {
+        border-right: 8px solid $main-accent;
+    }
+    .carousel .control-dots .dot {
+        background: $main-accent;
+    }
+    .carousel .carousel-status {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+        font-size: 13px;
+        color: #000;
+    }
     .projects {
+        
         .single {
             display: flex;
             flex-direction: row;
@@ -104,7 +125,7 @@
                     border-radius: 30px;
                     border: 0;
                     font-size: 16px;
-                    width: 100px;
+                    width: 110px;
                     align-items: center;
                     display: flex;
                     text-decoration: none;
@@ -121,7 +142,7 @@
                         transition: 5s display ease-in-out;
                     }
                     &:hover {
-                        width: 120px;
+                        width: 130px;
                         .arrow {
                             position: absolute;
                             margin-left: 85px;
@@ -133,7 +154,7 @@
                     background-color: #80808046;
                     cursor: default;
                     &:hover {
-                        width: 100px;
+                        width: 110px;
                         .arrow {
                             display: none;
                         }
