@@ -2,15 +2,16 @@
     width: 100%;
     z-index: 100;
     background-color: #f3f3f7;
+    padding-bottom: 30px;
     h2 {
         margin: 0 auto;
-        padding-top:40px;
+        padding-top: 40px;
         font-weight: 400;
         width: 100%;
         color: $light-grey;
         background-color: #f3f3f7;
     }
-    li.slide{
+    li.slide {
         background-color: rgba(255, 255, 255, 0);
     }
     .carousel .control-next.control-arrow:before {
@@ -31,8 +32,8 @@
         color: #000;
     }
     .projects {
-        z-index:10;
-        padding-bottom: 50px;
+        z-index: 10;
+        padding-bottom: 0px;
         .single {
             display: flex;
             flex-direction: row;
@@ -176,5 +177,13 @@
                 max-width: 100%;
             }
         }
+    }
+}
+.back {
+    background-image:url("");
+    background-size: 100% 100%;
+    background-repeat: none;
+    @media (max-width: $mid-breakpoint) {
+        background-image:url("");
     }
 }

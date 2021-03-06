@@ -84,9 +84,9 @@ function Project() {
     useEffect(() => {
     }, [])
     return (
-        <div id="four" class="project-section"  >
-            <h2 style={{"background-color":"white"}}>Projects</h2>
-            <div class="projects" style={{ "background-color":"white", "max-width": "2100px", "margin": "0 auto", }}>
+        <div class="project-section back"  style={{"background-color": "transparent"}}>
+            <h2 style={{"background-color": "transparent"}}>Projects</h2>
+            <div class="projects" style={{"max-width": "2100px", "margin": "0 auto", }}>
                 <Carousel
                     width="inherit"
                     {...getConfigurableProps()}
