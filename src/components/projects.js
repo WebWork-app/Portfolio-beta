@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Github, CaretRightFill } from "react-bootstrap-icons";
-import ps5 from "./images/ps5-project.png";
-import pwa from "./images/project-pwa.png";
-import snake from "./images/projects-snake.png";
-import portfolio from "./images/project-online.png";
+import ps5 from "./files/ps5-project.mp4";
+import snake from "./files/snake.mp4";
+import portfolio from "./files/project-online.mp4";
+import qalculater from "./files/qalculater.mp4";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+
+import ReactPlayer from 'react-player/file'
 
 const getConfigurableProps = () => ({
     showArrows: true,
@@ -45,14 +47,14 @@ function Project() {
         },
         {
             "PWA Academic Mark": [
-                pwa,
+                qalculater,
                 <>
                     This app removes my reliance on sticky notes and efficiently tracks my academic progress
                     UI Interactivity was implemented using the React framework and styling using SASS
                     Implemented the backend using Java and Spring boot which handles front-end requests
 
                 </>,
-                "Qalculater"
+                "Qalculater",
             ]
 
         },
@@ -84,9 +86,9 @@ function Project() {
     useEffect(() => {
     }, [])
     return (
-        <div id="four" class="project-section back"  style={{"background-color": "transparent"}}>
-            <h2 style={{"background-color": "transparent"}}>Projects</h2>
-            <div class="projects" style={{"max-width": "2100px", "margin": "0 auto", }}>
+        <div id="four" class="project-section back" style={{ "background-color": "transparent" }}>
+            <h2 style={{ "background-color": "transparent" }}>Projects</h2>
+            <div class="projects" style={{ "max-width": "2100px", "margin": "0 auto", }}>
                 <Carousel
                     width="inherit"
                     {...getConfigurableProps()}
@@ -96,7 +98,13 @@ function Project() {
                             return (
                                 <>
                                     <div class="single" >
-                                        <img src={Object.entries(project)[0][1][0]} />
+                                        <ReactPlayer
+                                            height={"inherit"}
+                                            loop={true}
+                                            playing={true}
+                                            url={Object.entries(project)[0][1][0]}
+                                            muted={true}
+                                        />
                                         <div class="project-info">
                                             <h3>{Object.entries(project)[0][0]}</h3>
                                             <br />
