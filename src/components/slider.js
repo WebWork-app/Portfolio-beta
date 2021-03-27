@@ -1,5 +1,5 @@
-import CPlusPlus from "./images/CPlusPlus.png";
-import Java from "./images/java.png";
+import CPlusPlus from "./images/CPlusPlus.svg";
+import Java from "./images/java.svg";
 import JS from "./images/JS.png";
 import Python from "./images/python.png";
 import HTML from "./images/html.png";
