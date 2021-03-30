@@ -21,9 +21,9 @@ function SectionCard() {
                     <img id="image2" class="bottom-img" src={bg} style={{ "max-width": "200%", "width": "200%", "position": "absolute", "bottom": 0 }} />
                     <img id="image3" class="bottom-img" src={bg} style={{ "max-width": "200%", "width": "200%", "position": "absolute", "bottom": 0 }} />
                     <h1>
-                        SAQIB ALI
+                        I Am Saqib Ali
                     <br />
-                        <p class="aspire">An Aspiring Software Engineer</p>
+                        <p class="aspire"><i>An Aspiring Software Engineer</i></p>
                     </h1>
                     <p>
                         A student of computer engineering with a strong passion for

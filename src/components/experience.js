@@ -10,11 +10,11 @@ import { Carousel } from 'react-responsive-carousel';
 const getConfigurableProps = () => ({
     showArrows: true,
     showStatus: false,
-    showIndicators:true,
-    infiniteLoop:true,
+    showIndicators: true,
+    infiniteLoop: true,
     showThumbs: false,
     useKeyboardArrows: false,
-    autoPlay:false,
+    autoPlay: false,
     stopOnHover: true,
     swipeable: true,
     dynamicHeight: false,
@@ -22,7 +22,7 @@ const getConfigurableProps = () => ({
     thumbWidth: 200,
     selectedItem: 1,
     interval: 10000,
-    transitionTime:300,
+    transitionTime: 300,
     swipeScrollTolerance: 100,
 });
 
@@ -143,11 +143,14 @@ function Experience() {
     useEffect(() => {
     }, [])
     return (
-        <div style={{"overflow": "hidden"}}>
-        <img src={wave4} class="top-wave"/>
+        <div style={{ "overflow": "hidden" }}>
+            <img src={wave4} class="top-wave" />
             <div id="three" class="project-section">
-                <h2>Experience</h2>
-                <div class="projects" style={{"max-width":"2100px", "margin":"0 auto"}}>
+                <h2 class="slider-header">
+                    Experience
+                    <hr />
+                </h2>
+                <div class="projects" style={{ "max-width": "2100px", "margin": "0 auto" }}>
                     <Carousel
                         width="inherit"
                         {...getConfigurableProps()}

@@ -87,7 +87,10 @@ function Project() {
     }, [])
     return (
         <div id="four" class="project-section back" style={{ "background-color": "transparent" }}>
-            <h2 style={{ "background-color": "transparent" }}>Projects</h2>
+            <h2 class="slider-header" style={{ "background-color": "transparent" }}>
+                Projects
+                <hr />
+            </h2>
             <div class="projects" style={{ "max-width": "2100px", "margin": "0 auto", }}>
                 <Carousel
                     width="inherit"

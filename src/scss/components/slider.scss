@@ -1,10 +1,20 @@
+.slider-header {
+    font-weight: 400;
+    font-size: 30px;
+    padding: 50px 0;
+    color: $text-black;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    hr {
+        background: rgb(197, 0, 0);
+        width: 30px;
+        height: 2px;
+        border: none;
+    }
+}
 .slider-container {
     margin: 20px;
-    .slider-header {
-        font-weight: 400;
-        padding: 50px 0;
-        color: $light-grey;
-    }
+
     .slider {
         display: flex;
         flex-direction: row;
@@ -15,7 +25,7 @@
             padding: 5px;
             width: 327px;
             h2 {
-                color: $main-accent-light;
+                color: $text-black;
                 font-weight: 600;
                 margin-top: 5px;
                 font-size: 15px;

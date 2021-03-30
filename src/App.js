@@ -4,6 +4,7 @@ import SectionCard from './components/sectionCard';
 import Experience from './components/experience';
 import Projects from './components/projects';
 import Slider from './components/slider';
+import Footer from './components/footer';
 import './App.css';
 import "./scss/styles.scss";
 
@@ -16,7 +17,7 @@ function App() {
       <br />
       <Experience />
       <Projects />
-      <hr />
+      <Footer />
     </div>
   );
 }

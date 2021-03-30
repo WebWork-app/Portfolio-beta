@@ -25,6 +25,7 @@ function Slider() {
         <div class="slider-container">
             <h2 class="slider-header">
                 Technologies
+                <hr/>
             </h2>
             <div class="slider">
                 {
