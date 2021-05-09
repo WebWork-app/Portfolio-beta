@@ -1,14 +1,18 @@
+.footer-img{
+    background: $main-accent;
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    bottom:0;
+    z-index: -1;
+    left: 0;
+}
 .footer {
-    img {
-        background: $main-accent-gradient;
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        padding-bottom: 250px;
-    }
+    background: $main-accent-gradient;
+    height: auto;
+    border-radius: 60% 60% 0 0;
     .footer-content {
-        padding-top: 25%;
+        padding: 100px 0;
         border-radius: 50% 50% 0 0;
         width: 100%;
         display: flex;
@@ -23,9 +27,12 @@
                 font-size:20px;
             }
         }
-        button {
+        a {
+            text-decoration: none;
             margin-top: 40px;
             padding: 10px 40px;
+            width: 200px;
+            font-size: 20px;
             color:$text-black;
             background: $yellow-gradient;
             border-radius: 20px;

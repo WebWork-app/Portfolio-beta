@@ -6,15 +6,16 @@ function Footer() {
     }, [])
 
     return (
+        <>
         <div class="footer">
-            <img src={footer} />
             <div class="footer-content">
                 <h1>Interested to work togather?</h1>
-                <button>
+                <a href="mailto:saqibalip321@gmail.com">
                     Lets talk!
-                </button>
+                </a>
             </div>
         </div>
+        </>
     )
 }
 

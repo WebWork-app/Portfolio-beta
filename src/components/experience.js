@@ -7,6 +7,7 @@ import wave4 from "./images/wave4.svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
+import bg from "./images/body-wave2.png"
 const getConfigurableProps = () => ({
     showArrows: true,
     showStatus: false,
@@ -143,7 +144,7 @@ function Experience() {
     useEffect(() => {
     }, [])
     return (
-        <div style={{ "overflow": "hidden" }}>
+        <div style={{ "overflow": "hidden"}}>
             <img src={wave4} class="top-wave" />
             <div id="three" class="project-section">
                 <h2 class="slider-header">
