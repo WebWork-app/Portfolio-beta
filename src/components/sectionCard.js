@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
 import Icon from "./images/profile.jpg";
 import bg from "./images/body-wave2.png";
 import bg2 from "./images/flow.png";
 import resume from "./files/Resume 2A.docx.pdf";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function SectionCard() {
   window.addEventListener("scroll", () => {
@@ -14,12 +11,7 @@ function SectionCard() {
       document.getElementById("navbar").className = "nav-scrolling";
     }
   });
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      anchorPlacement: "top-bottom",
-    });
-  }, []);
+
   return (
     <>
       <div class="main">
@@ -66,7 +58,7 @@ function SectionCard() {
               <i>An Aspiring Software Engineer</i>
             </p>
           </h1>
-          <p data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+          <p data-aos="fade-down">
             A student of computer engineering with a strong passion for software
             development and solid industry experience. If you are looking to
             hire, please contact me here:
