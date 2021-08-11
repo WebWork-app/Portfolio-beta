@@ -7,43 +7,38 @@ import Css from "./images/css.png";
 import React from "./images/react.png";
 import Spring from "./images/spring.png";
 
-
-
 function Slider() {
-    const technolgies =
-        [
-            { 'C++': CPlusPlus },
-            { 'Java': Java },
-            { 'Java Script': JS },
-            { 'Python': Python },
-            { 'Html': HTML },
-            { 'Sass': Css },
-            { 'React': React },
-            { 'Spring': Spring },
-        ]
-    return (
-        <div class="slider-container">
-            <h2 class="slider-header">
-                Technologies
-                <hr/>
-            </h2>
-            <div class="slider">
-                {
-                    technolgies.map((technolgy) => {
-                        return (
-                            <div class="slider-content">
-                                <img
-                                    src={Object.entries(technolgy)[0][1]}
-                                    class="slider-img" />
-                                <h2>
-                                    {Object.entries(technolgy)[0][0]}
-                                </h2>
-                            </div>
-                        )
-                    })
-                }
+  const technolgies = [
+    { "C++": CPlusPlus },
+    { Java: Java },
+    { "Java Script": JS },
+    { Python: Python },
+    { Html: HTML },
+    { Sass: Css },
+    { React: React },
+    { Spring: Spring },
+  ];
+  return (
+    <div class="slider-container">
+      <h2 class="slider-header" data-aos="fade-up">
+        Technologies
+        <hr />
+      </h2>
+      <div class="slider">
+        {technolgies.map((technolgy, index) => {
+          return (
+            <div
+              class="slider-content"
+              data-aos="zoom-out-up"
+              data-aos-delay={index * 50}
+            >
+              <img src={Object.entries(technolgy)[0][1]} class="slider-img" />
+              <h2>{Object.entries(technolgy)[0][0]}</h2>
             </div>
-        </div>
-    )
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 export default Slider;
