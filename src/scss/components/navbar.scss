@@ -1,74 +1,98 @@
 nav {
-    position: fixed;
-    z-index: 1100;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    transition: color 200ms ease, background-color 200ms ease;
-    left: 0;
-    outline: none;
-    height: 70px;
-    transition: 0.25s padding-top ease-in-out, 0.25s padding-bottom ease-in-out;
+  position: fixed;
+  z-index: 1100;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 200ms ease, background-color 200ms ease;
+  left: 0;
+  outline: none;
+  height: 70px;
+  transition: 0.25s padding-top ease-in-out, 0.25s padding-bottom ease-in-out;
+  .nav-eye {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: eye 2s infinite alternate-reverse;
+    .eye-pupil {
+      position: relative;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      border: 1px solid white;
+      background: white;
+      transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    }
+  }
+}
+@keyframes eye {
+  from {
+    height: 35px;
+  }
+  to {
+    height: 25px;
+  }
 }
 .nav-scrolling {
-    background-color:#7217e4;
-    box-shadow: $raised-shadow;
-    transition: 200ms background-color ease-in-out;
+  background-color: #7217e4;
+  box-shadow: $raised-shadow;
+  transition: 200ms background-color ease-in-out;
 }
-.trans{
-    background-color: transparent;
-    transition: 200ms background-color ease-in-out;
+.trans {
+  background-color: transparent;
+  transition: 200ms background-color ease-in-out;
 }
 .nav-left {
-    margin-left: 20px;
-    font-weight: 700;
-    border: solid 3px $text-grey;
-    padding: 5px;
-    color: $text-grey;
+  margin-left: 20px;
+  font-weight: 700;
+  border: solid 3px $text-grey;
+  padding: 5px;
+  color: $text-grey;
 }
 .nav-right {
-    margin-right: 20px;
-    display: flex;
-    justify-content: flex-end;
-    width: 70%;
-    a {
-        font-size: 14px;
-        max-width: 600px;
-        font-weight: 500;
-        color: $text-grey;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0.15em;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  a {
+    font-size: 14px;
+    max-width: 600px;
+    font-weight: 500;
+    color: $text-grey;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
 
-        display: inline-block;
-        padding: 15px 20px;
-        position: relative;
-        @media (max-width: $min-breakpoint) {
-            font-weight: 400;
-            font-size:11px;
-        }
-    } 
-    a:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 50%;
-        position: absolute;
-        background: $text-grey;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    @media (max-width: $min-breakpoint) {
+      font-weight: 400;
+      font-size: 11px;
     }
-    a:hover:after {
-        width: 100%;
-        left: 0;
-    }
+  }
+  a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $text-grey;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after {
+    width: 100%;
+    left: 0;
+  }
 }
 nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
 }

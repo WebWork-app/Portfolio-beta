@@ -9,9 +9,39 @@ import {
   Mailbox2,
 } from "react-bootstrap-icons";
 function Navbar() {
+  const [mouseX, setX] = useState(0);
+  const [mouseY, setY] = useState(0);
+  document.addEventListener("mousemove", (event) => {
+    let x = event.clientX;
+    let y = event.clientY;
+    const tgt = event.target;
+    const computed = window.getComputedStyle(tgt)["cursor"];
+    if (computed == "pointer") {
+      document.getElementById("eye-pupil").style.width = "11px";
+      document.getElementById("eye-pupil").style.height = "11px";
+      document.getElementById("nav-eye").style.height = "35px";
+      document.getElementById("nav-eye").style.animation = "none";
+    } else {
+      document.getElementById("eye-pupil").style.width = "7px";
+      document.getElementById("eye-pupil").style.height = "7px";
+
+      document.getElementById("nav-eye").style.animation =
+        "eye 2s infinite alternate-reverse";
+    }
+    // get viewport width
+    document.getElementById("eye-pupil").style.left =
+      (30 * x) / window.innerWidth + "px";
+
+    // get viewport height
+    document.getElementById("eye-pupil").style.top =
+      (20 * y) / window.innerHeight + "px";
+  });
   return (
     <nav id="navbar" class="trans">
       <div class="nav-left">SA</div>
+      <div id="nav-eye" class="nav-eye">
+        <div id="eye-pupil" class="eye-pupil"></div>
+      </div>
       <ul class="nav-right">
         <a href="#two">
           <li data-aos="fade-down">

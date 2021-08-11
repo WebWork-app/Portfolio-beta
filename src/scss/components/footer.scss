@@ -1,42 +1,66 @@
 .footer-img {
-    background: $main-accent;
-    width: 100%;
-    position: absolute;
-    height: 50px;
-    bottom: 0;
-    z-index: -1;
-    left: 0;
+  background: $main-accent;
+  width: 100%;
+  position: absolute;
+  height: 50px;
+  bottom: 0;
+  z-index: -1;
+  left: 0;
 }
 .footer {
-    background: $main-accent;
-    height: auto;
-    .footer-content {
-        padding: 100px 0;
-        border-radius: 50% 50% 0 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 40px;
-            color: rgb(255, 255, 255);
-            @media (max-width: $mid-breakpoint) {
-                font-size: 20px;
-            }
+  background: $main-accent;
+  height: auto;
+  border-top: 7px solid #c6bbff;
+
+  .footer-content {
+    padding: 50px 0;
+    border-radius: 50% 50% 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .footer-icons {
+      display: flex;
+      justify-content: space-around;
+      width: 400px;
+      height: 60px;
+      .footer-icon {
+        border-radius: 50%;
+        border: 2px solid white;
+        padding: 10px;
+        transition: border 0.1s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          border: 4px solid $yellow;
         }
-        a {
-            text-decoration: none;
-            margin-top: 40px;
-            padding: 10px 40px;
-            width: 200px;
-            font-size: 20px;
-            color: $text-black;
-            background: $yellow-gradient;
-            border-radius: 20px;
-            border: none;
-            box-shadow: $raised-shadow;
-        }
+      }
     }
+    .footer-bottom {
+      p {
+        font-weight: bolder;
+        color: #c6bbff;
+      }
+    }
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 40px;
+      color: rgb(255, 255, 255);
+      @media (max-width: $mid-breakpoint) {
+        font-size: 20px;
+      }
+    }
+    a {
+      text-decoration: none;
+      margin-top: 40px;
+      padding: 10px 40px;
+      width: 200px;
+      font-size: 20px;
+      color: $text-black;
+      background: $yellow-gradient;
+      border-radius: 20px;
+      border: none;
+      box-shadow: $raised-shadow;
+    }
+  }
 }
