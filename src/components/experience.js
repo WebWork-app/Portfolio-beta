@@ -56,8 +56,8 @@ function Experience() {
           <li>
             <span>
               Lead the development of an admin screen to upload, delete and edit
-              icons utilizing
-              <em>React</em>, <em>Java</em> and <em>Spring boot</em>
+              icons utilizing <em>React</em>, <em>Java</em> and{" "}
+              <em>Spring boot</em>
             </span>
           </li>
           <li>
@@ -101,9 +101,9 @@ function Experience() {
             <span>
               Identified, documented and reported bugs along with other issues
               within the software database of Propaganda Gold. This required
-              quickly getting familiar with new technologies such as
-              <em>Git</em>,<em>Amazon Web Services</em>,<em>Vue</em>,
-              <em>Node JS</em>,<em>CLI</em>
+              quickly getting familiar with new technologies such as{" "}
+              <em>Git</em>, <em>Amazon Web Services</em>, <em>Vue</em>,{" "}
+              <em>Node JS</em>, <em>CLI</em>
             </span>
           </li>
           <li>
@@ -126,8 +126,7 @@ function Experience() {
               Demonstrated responsibility and initiative to develop the front
               end of the social media app along with the lead engineer. This
               involved coding the front end in Vue and understanding the backend
-              in <em>JS</em> and
-              <em>C++</em>.
+              in <em>JS</em> and <em>C++</em>.
             </span>
           </li>
           <li>
