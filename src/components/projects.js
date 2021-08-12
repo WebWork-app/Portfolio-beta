@@ -31,7 +31,7 @@ const getConfigurableProps = () => ({
 function Project() {
   const projects = [
     {
-      "Playstation 5 Skin": [
+      "PS5 UI for Windows!": [
         ps5,
         <>
           Developed an interactive front-end which provides a clean interface to
@@ -101,7 +101,7 @@ function Project() {
               <>
                 <div class="single">
                   <ReactPlayer
-                    height={"inherit"}
+                    id="player"
                     loop={true}
                     playing={true}
                     url={Object.entries(project)[0][1][0]}
