@@ -156,6 +156,7 @@ function Experience() {
           {experiences.map((project, index) => {
             return (
               <div
+                id={"company-container-" + index}
                 class="company-container"
                 onMouseEnter={() => {
                   document

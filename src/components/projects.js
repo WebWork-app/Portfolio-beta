@@ -95,6 +95,34 @@ function Project() {
         <hr />
       </h2>
       <div class="projects" style={{ "max-width": "2100px", margin: "0 auto" }}>
+        <div class="all-companies">
+          {projects.map((project, index) => {
+            return (
+              <div
+                id={"company-container-" + index}
+                class="company-container"
+                style={{
+                  backgroundColor: "#7217e4",
+                  color: "rgba(255, 255, 255, 0.842)",
+                }}
+                onMouseEnter={() => {
+                  document
+                    .getElementsByClassName("control-dots")[1]
+                    .getElementsByClassName("dot")
+                    [index].click();
+                }}
+              >
+                <p
+                  class="company"
+                  data-aos="zoom-in"
+                  data-aos-delay={index * 100}
+                >
+                  {Object.entries(project)[0][0]}
+                </p>
+              </div>
+            );
+          })}
+        </div>
         <Carousel width="inherit" {...getConfigurableProps()}>
           {projects.map((project) => {
             return (
