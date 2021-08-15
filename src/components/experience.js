@@ -167,7 +167,8 @@ function Experience() {
                 <img
                   class="company"
                   src={Object.entries(project)[0][1][0]}
-                  data-aos="fade-right"
+                  data-aos="zoom-in"
+                  data-aos-delay={index * 100}
                 />
               </div>
             );
