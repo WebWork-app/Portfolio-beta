@@ -149,6 +149,30 @@ function Experience() {
           Experience
           <hr />
         </h2>
+        {
+          // Making a section with over view of all companies
+        }
+        <div class="all-companies">
+          {experiences.map((project, index) => {
+            return (
+              <div
+                class="company-container"
+                onMouseEnter={() => {
+                  document
+                    .getElementsByClassName("control-dots")[0]
+                    .getElementsByClassName("dot")
+                    [index].click();
+                }}
+              >
+                <img
+                  class="company"
+                  src={Object.entries(project)[0][1][0]}
+                  data-aos="fade-right"
+                />
+              </div>
+            );
+          })}
+        </div>
         <div
           class="projects"
           style={{ "max-width": "2100px", margin: "0 auto" }}

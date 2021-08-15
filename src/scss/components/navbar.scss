@@ -37,7 +37,7 @@ nav {
   }
 }
 .nav-scrolling {
-  background-color: #7217e4;
+  background-color: $main-accent-dark;
   box-shadow: $raised-shadow;
   transition: 200ms background-color ease-in-out;
 }

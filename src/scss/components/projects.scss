@@ -8,6 +8,35 @@
     padding-top: 40px;
     width: 100%;
   }
+  .all-companies {
+    width: 50%;
+    @include flex-center(row);
+    margin: 0 auto;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+    .company-container {
+      @include box-shadow(rgba(149, 157, 165, 0.2));
+      @include flex-center(column);
+      width: 100px;
+      padding: 20px;
+      margin: 5px;
+      border-radius: 30px;
+      height: 2pc;
+      transition: box-shadow 0.2s ease-in-out;
+      @media (max-width: 600px) {
+        width: 70px;
+        height: 20px;
+      }
+      .company {
+        width: inherit;
+      }
+      &:hover {
+        @include box-shadow($main-accent-light + 130);
+        cursor: pointer;
+      }
+    }
+  }
   li.slide {
     background-color: rgba(255, 255, 255, 0);
   }
@@ -32,13 +61,9 @@
     z-index: 10;
     padding-bottom: 0px;
     .single {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      @include flex-center(row);
       padding-top: 40px;
       padding-bottom: 80px;
-      justify-content: center;
-      align-items: center;
 
       .phone-video {
         display: block;

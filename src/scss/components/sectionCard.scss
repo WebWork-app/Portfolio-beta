@@ -96,10 +96,7 @@
 
 #two {
   .section-container-btns {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include flex-center(row);
     z-index: 20;
     a {
       background-color: transparent;
@@ -126,7 +123,7 @@
         200ms color ease-in-out;
     }
     .resume:hover {
-      background-color: #332179;
+      background-color: $main-accent-darker;
       border: solid 2px $yellow;
       color: $yellow;
     }
