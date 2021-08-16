@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Github, CaretRightFill } from "react-bootstrap-icons";
+import { Github, CaretRightFill, Controller } from "react-bootstrap-icons";
 import ps5 from "./files/ps5-project.mp4";
 import snake from "./files/snake.mp4";
 import portfolio from "./files/project-online.mp4";
@@ -102,6 +102,8 @@ function Project() {
                 id={"company-container-" + index}
                 class="company-container"
                 style={{
+                  width: "auto",
+                  height: "0px",
                   backgroundColor: "#7217e4",
                   color: "rgba(255, 255, 255, 0.842)",
                 }}
@@ -112,13 +114,9 @@ function Project() {
                     [index].click();
                 }}
               >
-                <p
-                  class="company"
-                  data-aos="zoom-in"
-                  data-aos-delay={index * 100}
-                >
-                  {Object.entries(project)[0][0]}
-                </p>
+                <a class="main-btn" style={{ fontSize: "10px" }}>
+                  <p class="center">{Object.entries(project)[0][0]}</p>
+                </a>
               </div>
             );
           })}
@@ -127,7 +125,7 @@ function Project() {
           {projects.map((project) => {
             return (
               <>
-                <div class="single">
+                <div class="single" style={{ paddingTop: "0px" }}>
                   <ReactPlayer
                     id="player"
                     loop={true}

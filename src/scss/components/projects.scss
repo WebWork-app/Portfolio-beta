@@ -18,11 +18,11 @@
     .company-container {
       @include box-shadow(rgba(149, 157, 165, 0.2));
       @include flex-center(column);
-      width: 100px;
+      width: auto;
       padding: 20px;
       margin: 5px;
       border-radius: 30px;
-      height: 2pc;
+      height: auto;
       transition: box-shadow 0.2s ease-in-out;
       @media (max-width: 600px) {
         width: 70px;
@@ -166,7 +166,6 @@
           border: 0;
           font-size: 16px;
           width: 110px;
-          align-items: center;
           display: flex;
           text-decoration: none;
           font-size: 17px;
@@ -220,4 +219,7 @@
   @media (max-width: $mid-breakpoint) {
     background-image: url("");
   }
+}
+.center {
+  @include flex-center(row);
 }
