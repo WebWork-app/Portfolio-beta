@@ -158,6 +158,7 @@ function Experience() {
               <div
                 id={"company-container-" + index}
                 class="company-container"
+                style={{ width: "100px" }}
                 onMouseEnter={() => {
                   document
                     .getElementsByClassName("control-dots")[0]

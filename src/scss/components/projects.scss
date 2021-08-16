@@ -18,12 +18,13 @@
     .company-container {
       @include box-shadow(rgba(149, 157, 165, 0.2));
       @include flex-center(column);
-      width: auto;
+      width: 100px;
       padding: 20px;
       margin: 5px;
       border-radius: 30px;
-      height: auto;
+      height: 20px;
       transition: box-shadow 0.2s ease-in-out;
+      border: solid 1px rgba(51, 51, 51, 0.103);
       @media (max-width: 600px) {
         width: 70px;
         height: 20px;
@@ -219,7 +220,4 @@
   @media (max-width: $mid-breakpoint) {
     background-image: url("");
   }
-}
-.center {
-  @include flex-center(row);
 }
