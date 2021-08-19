@@ -156,7 +156,12 @@ function Project() {
                             : "main-btn"
                         }
                       >
-                        <Github style={{ "padding-right": "10px" }} size={30} />
+                        <Github
+                          style={{
+                            "padding-right": "10px",
+                          }}
+                          size={30}
+                        />
                         Github
                         <CaretRightFill
                           style={{ "padding-left": "10px" }}
