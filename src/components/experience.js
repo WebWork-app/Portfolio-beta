@@ -178,7 +178,7 @@ function Experience() {
         </div>
         <div
           class="projects"
-          style={{ "max-width": "2100px", margin: "0 auto" }}
+          style={{ "max-width": "1200px", margin: "0 auto" }}
         >
           <Carousel width="inherit" {...getConfigurableProps()}>
             {experiences.map((project) => {

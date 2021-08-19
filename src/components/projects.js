@@ -94,7 +94,7 @@ function Project() {
         Projects
         <hr />
       </h2>
-      <div class="projects" style={{ "max-width": "2100px", margin: "0 auto" }}>
+      <div class="projects" style={{ "max-width": "1200px", margin: "0 auto" }}>
         <div class="all-companies">
           {projects.map((project, index) => {
             return (
