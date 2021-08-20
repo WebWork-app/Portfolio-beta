@@ -110,6 +110,17 @@
         font-size: 28px;
         margin: 0;
         text-align: left;
+        align-items: center;
+        display: flex;
+        .project-tag {
+          background-color: $main-accent;
+          font-size: 15px;
+          color: white;
+          height: auto;
+          padding: 5px 6px;
+          border-radius: 5px;
+          margin-left: 10px;
+        }
       }
       p {
         margin-top: 0;

@@ -12,6 +12,7 @@ const getConfigurableProps = () => ({
   showArrows: true,
   showStatus: false,
   showIndicators: true,
+  axis: "horizontal",
   infiniteLoop: true,
   showThumbs: false,
   useKeyboardArrows: false,
@@ -21,10 +22,11 @@ const getConfigurableProps = () => ({
   dynamicHeight: false,
   emulateTouch: true,
   thumbWidth: 200,
-  selectedItem: 1,
-  interval: 10000,
+  selectedItem: 0,
+  interval: 100000,
   transitionTime: 300,
   swipeScrollTolerance: 100,
+  preventMovementUntilSwipeScrollTolerance: true,
 });
 
 function Experience() {

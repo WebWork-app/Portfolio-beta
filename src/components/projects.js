@@ -14,6 +14,7 @@ const getConfigurableProps = () => ({
   showArrows: true,
   showStatus: false,
   showIndicators: true,
+  axis: "horizontal",
   infiniteLoop: true,
   showThumbs: false,
   useKeyboardArrows: false,
@@ -27,9 +28,25 @@ const getConfigurableProps = () => ({
   interval: 100000,
   transitionTime: 300,
   swipeScrollTolerance: 100,
+  preventMovementUntilSwipeScrollTolerance: true,
 });
 function Project() {
   const projects = [
+    {
+      "Sorting Visualizer": [
+        ps5,
+        <>
+          Developed an interactive front-end which provides a clean interface to
+          launch games Implemented core functionality to launch, hide, sort,
+          remove games using Python scripts UI styling and interactivity was
+          implemented using Kodi Incorporated the Xinput api to report
+          information regarding controllers in UI The skin can be viewed here:
+          Play Station 5 Skin
+        </>,
+        "Sorting-Visualizer",
+        "2021",
+      ],
+    },
     {
       "PS5 UI for Windows!": [
         ps5,
@@ -42,10 +59,11 @@ function Project() {
           Play Station 5 Skin
         </>,
         "PlayStation-5-Kodi-Skin",
+        "2021",
       ],
     },
     {
-      "PWA Academic Mark": [
+      Qalculater: [
         qalculater,
         <>
           This app removes my reliance on sticky notes and efficiently tracks my
@@ -54,6 +72,7 @@ function Project() {
           and Spring boot which handles front-end requests
         </>,
         "Qalculater",
+        "2021",
       ],
     },
     {
@@ -65,6 +84,7 @@ function Project() {
           principles to provide a clear modular structure
         </>,
         "",
+        "2020",
       ],
     },
     {
@@ -75,6 +95,7 @@ function Project() {
           responsive website using HTML, CSS, JavaSCript with some Jquery!
         </>,
         "SaqibA1i.github.io",
+        "2019 - 2021",
       ],
     },
   ];
@@ -104,8 +125,8 @@ function Project() {
                 style={{
                   width: "auto",
                   height: "0px",
-                  backgroundColor: "#7217e4",
-                  color: "rgba(255, 255, 255, 0.842)",
+                  backgroundColor: "tansparent",
+                  color: "#333",
                 }}
                 onMouseEnter={() => {
                   document
@@ -137,6 +158,9 @@ function Project() {
                   <div class="project-info">
                     <h3 data-aos="fade-left">
                       {Object.entries(project)[0][0]}
+                      <b class="project-tag">
+                        {Object.entries(project)[0][1][3]}
+                      </b>
                     </h3>
                     <br />
                     <p data-aos="fade-left">
