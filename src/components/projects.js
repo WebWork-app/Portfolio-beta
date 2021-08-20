@@ -128,7 +128,7 @@ function Project() {
                   backgroundColor: "tansparent",
                   color: "#333",
                 }}
-                onMouseEnter={() => {
+                onClick={() => {
                   document
                     .getElementsByClassName("control-dots")[1]
                     .getElementsByClassName("dot")
