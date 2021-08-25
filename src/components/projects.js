@@ -94,13 +94,29 @@ function Project() {
           Web Developement has been my passion for some time now! I created this
           responsive website using HTML, CSS, JavaSCript with some Jquery!
         </>,
-        "SaqibA1i.github.io",
+        "Online-Portfolio",
         "2019 - 2021",
       ],
     },
   ];
+  const [repo, setRepos] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    fetch("https://api.github.com/users/SaqibA1i/repos")
+      .then((response) => {
+        response.json().then((data) => {
+          let repositories = [];
+          // push the visible / existing repos to
+          data.map((entry) => {
+            repositories.push(entry["name"]);
+          });
+          setRepos([...repositories]);
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <div
       id="four"
@@ -169,13 +185,13 @@ function Project() {
                     <div class="project-btns" data-aos="zoom-in-up">
                       <a
                         href={
-                          Object.entries(project)[0][1][2] == ""
+                          !repo.includes(Object.entries(project)[0][1][2])
                             ? "javascript:void(0)"
                             : "https://github.com/SaqibA1i/" +
                               Object.entries(project)[0][1][2]
                         }
                         class={
-                          Object.entries(project)[0][1][2] == ""
+                          !repo.includes(Object.entries(project)[0][1][2])
                             ? "disabled main-btn"
                             : "main-btn"
                         }
