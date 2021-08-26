@@ -3,6 +3,7 @@
 }
 html {
   scroll-behavior: smooth;
+  min-width: 400px;
 }
 .App-logo {
   height: 40vmin;
