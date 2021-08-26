@@ -58,7 +58,7 @@ function Project() {
           information regarding controllers in UI The skin can be viewed here:
           Play Station 5 Skin
         </>,
-        "PlayStation-5-Kodi-Skin",
+        "Playstation-5-windows",
         "2021",
       ],
     },
