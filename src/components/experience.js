@@ -37,9 +37,34 @@ function Experience() {
         <>Developer</>,
         <>May 2021 - August 2021</>,
         <>
-          <h2>
-            <em>Currently employed</em>
-          </h2>
+          <li>
+            <span>
+              Spearheaded the research and integration of the Deck tool in a
+              Jenkins CICD pipeline to streamline and secure changes made to the{" "}
+              <em>Kong Api Gateway</em>.
+            </span>
+          </li>
+          <li>
+            <span>
+              Developed <em>python scripts</em> to automate the warehousing of
+              EFK logs.
+            </span>
+          </li>
+          <li>
+            <span>
+              Leveraged knowledge in <em>Java</em>, <em>Springboot</em> to add
+              user context to a web application by using interceptors and
+              deploying the app via <em>Docker</em>. The app was accessed
+              through a reverse proxy integrated with the Keycloack IDP.
+            </span>
+          </li>
+          <li>
+            <span>
+              Created a <em>ExpressJS</em> application that scrapes metrics from
+              the Keycloack IDP and outputs a 200 / 500 http response based on
+              custom health checks
+            </span>
+          </li>
         </>,
       ],
     },

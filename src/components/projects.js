@@ -70,7 +70,13 @@ function Project() {
           This app removes my reliance on sticky notes and efficiently tracks my
           academic progress. UI Interactivity was implemented using the{" "}
           <b>React framework</b> and styling using <b>SASS</b>. Implemented the
-          backend using Java and Spring boot which handles front-end requests
+          backend using Java and Spring boot which handles front-end requests.
+          The time taken to record a single entry,
+          <br />
+          <b>Without app: </b>26s
+          <br /> <b>With app: </b>9s
+          <br />
+          i.e. a time reduction of 65%.
         </>,
         "Qalculater",
         "2021",
