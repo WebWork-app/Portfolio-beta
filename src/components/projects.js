@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Github, CaretRightFill, Controller } from "react-bootstrap-icons";
 import ps5 from "./files/ps5-project.mp4";
 import snake from "./files/snake.mp4";
 import portfolio from "./files/project-online.mp4";
@@ -9,6 +8,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 import ReactPlayer from "react-player/file";
+import GithubLink from "./helperComponents/githubLink";
+import ProjectLink from "./helperComponents/projectLink";
 
 const getConfigurableProps = () => ({
   showArrows: true,
@@ -53,8 +54,8 @@ function Project() {
         <>
           Developed an interactive front-end which provides a clean interface to
           launch games Implemented core functionality to launch, hide, sort,
-          remove games using Python scripts UI styling and interactivity was
-          implemented using Kodi Incorporated the Xinput api to report
+          remove games using <b>Python scripts</b> UI styling and interactivity
+          was implemented using Kodi Incorporated the Xinput api to report
           information regarding controllers in UI The skin can be viewed here:
           Play Station 5 Skin
         </>,
@@ -67,9 +68,9 @@ function Project() {
         qalculater,
         <>
           This app removes my reliance on sticky notes and efficiently tracks my
-          academic progress UI Interactivity was implemented using the React
-          framework and styling using SASS Implemented the backend using Java
-          and Spring boot which handles front-end requests
+          academic progress. UI Interactivity was implemented using the{" "}
+          <b>React framework</b> and styling using <b>SASS</b>. Implemented the
+          backend using Java and Spring boot which handles front-end requests
         </>,
         "Qalculater",
         "2021",
@@ -79,9 +80,13 @@ function Project() {
       "Snake Game": [
         snake,
         <>
-          Built a clone of the classic addictive game: Snake Implemented core
-          game logic and visuals using C++ Incorporated fundamental OOP
-          principles to provide a clear modular structure
+          Built a clone of the classic addictive game: Snake. Implemented core
+          game logic and visuals using <b>C++</b>. Incorporated fundamental OOP
+          principles like
+          <i> Inheritance, </i>
+          <i>Abstraction, </i>
+          <i>Encapsulation </i>
+          to provide a clear modular structure
         </>,
         "",
         "2020",
@@ -91,14 +96,22 @@ function Project() {
       "Online Portfolio": [
         portfolio,
         <>
-          Web Developement has been my passion for some time now! I created this
-          responsive website using HTML, CSS, JavaSCript with some Jquery!
+          I enjoy front-end development, creating good looking UI and UX. I
+          created this responsive website using <b>React</b> which introduces
+          me, my interests, projects, work experiences and much more!
         </>,
         "Online-Portfolio",
         "2019 - 2021",
       ],
     },
   ];
+  const links = {
+    "Sorting Visualizer": "https://sort-app.netlify.app/",
+    "PS5 UI for Windows!": "",
+    Qalculater: "https://qalculater.netlify.app/login",
+    "Snake Game": "",
+    "Online Portfolio": "",
+  };
   const [repo, setRepos] = useState([]);
 
   useEffect(() => {
@@ -182,33 +195,12 @@ function Project() {
                     <p data-aos="fade-left">
                       {Object.entries(project)[0][1][1]}
                     </p>
-                    <div class="project-btns" data-aos="zoom-in-up">
-                      <a
-                        href={
-                          !repo.includes(Object.entries(project)[0][1][2])
-                            ? "javascript:void(0)"
-                            : "https://github.com/SaqibA1i/" +
-                              Object.entries(project)[0][1][2]
-                        }
-                        class={
-                          !repo.includes(Object.entries(project)[0][1][2])
-                            ? "disabled main-btn"
-                            : "main-btn"
-                        }
-                      >
-                        <Github
-                          style={{
-                            "padding-right": "10px",
-                          }}
-                          size={30}
-                        />
-                        Github
-                        <CaretRightFill
-                          style={{ "padding-left": "10px" }}
-                          class="arrow"
-                          size={25}
-                        />
-                      </a>
+                    <div class="links">
+                      <GithubLink project={project} repo={repo} />
+                      <ProjectLink
+                        link={links}
+                        projectName={Object.entries(project)[0][0]}
+                      />
                     </div>
                   </div>
                 </div>

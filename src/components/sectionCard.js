@@ -1,16 +1,27 @@
 import Icon from "./images/profile.jpg";
 import bg from "./images/body-wave2.png";
-import bg2 from "./images/flow.png";
 import resume from "./files/Resume 2A.docx.pdf";
+import React, { useEffect } from "react";
 
 function SectionCard() {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY < 50) {
-      document.getElementById("navbar").className = "trans";
-    } else if (window.scrollY > 50) {
-      document.getElementById("navbar").className = "nav-scrolling";
-    }
-  });
+  const Jobs = ["Frontend Developer", "Backend Developer", "DevOps Developer"];
+  useEffect(() => {
+    document
+      .getElementById("dev")
+      .addEventListener("animationiteration", () => {
+        let element = document.getElementById("dev");
+        let job = element.innerText;
+        let index = (Jobs.indexOf(job) + 1) % Jobs.length;
+        document.getElementById("dev").innerText = Jobs[index];
+      });
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 50) {
+        document.getElementById("navbar").className = "trans";
+      } else if (window.scrollY > 50) {
+        document.getElementById("navbar").className = "nav-scrolling";
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -52,10 +63,10 @@ function SectionCard() {
             }}
           />
           <h1 data-aos="fade-down">
-            I Am Saqib Ali
+            SAQIB ALI
             <br />
             <p class="aspire" data-aos="fade-down">
-              <i>An Aspiring Software Engineer</i>
+              <div id="dev">{Jobs[0]}</div>
             </p>
           </h1>
           <p data-aos="fade-down">

@@ -110,6 +110,13 @@
     }
     .project-info {
       max-width: 46%;
+      .links {
+        display: flex;
+        flex-direction: row;
+        .project-btns {
+          margin-right: 20px;
+        }
+      }
       h3 {
         font-size: 28px;
         margin: 0;
@@ -205,6 +212,11 @@
               display: block;
             }
           }
+        }
+        .main-link-btn {
+          color: #333;
+          background-color: white;
+          box-shadow: $raised-shadow;
         }
         .disabled {
           background-color: #80808046;

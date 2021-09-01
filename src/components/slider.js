@@ -11,12 +11,12 @@ function Slider() {
   const technolgies = [
     { "C++": CPlusPlus },
     { Java: Java },
+    { Spring: Spring },
     { "Java Script": JS },
     { Python: Python },
     { Html: HTML },
     { Sass: Css },
     { React: React },
-    { Spring: Spring },
   ];
   return (
     <div class="slider-container">

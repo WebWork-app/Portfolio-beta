@@ -5,11 +5,7 @@ $main-accent-dark: #7217e4;
 $main-accent-darker: #332179;
 $yellow-gradient: linear-gradient(180deg, #f2cf00 0, #f2b200 100%);
 $yellow-gradient-light: linear-gradient(180deg, #eeca01 0, #f5b507 100%);
-$main-accent-gradient: linear-gradient(
-  180deg,
-  $main-accent-light 0,
-  $main-accent 100%
-);
+$main-accent-gradient: linear-gradient(to bottom, #7a19f1, #332179);
 $black: rgba(0, 0, 0, 0.705);
 $text-black: #333;
 $light-grey: #a9a9a9;
