@@ -3,6 +3,8 @@ import ps5 from "./files/ps5-project.mp4";
 import snake from "./files/snake.mp4";
 import portfolio from "./files/project-online.mp4";
 import qalculater from "./files/qalculater.mp4";
+import FlappyBird from "./files/Flappy Bird.mp4";
+import Sorting from "./files/Sorting.mp4";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -35,14 +37,12 @@ function Project() {
   const projects = [
     {
       "Sorting Visualizer": [
-        ps5,
+        Sorting,
         <>
-          Developed an interactive front-end which provides a clean interface to
-          launch games Implemented core functionality to launch, hide, sort,
-          remove games using Python scripts UI styling and interactivity was
-          implemented using Kodi Incorporated the Xinput api to report
-          information regarding controllers in UI The skin can be viewed here:
-          Play Station 5 Skin
+          Developed a clean web interface to visualize the progress of some
+          famous sorting algorithms. Incorporated Merge Sort, Quick Sort and
+          Bubble Sort. Added sliders for the purposes of manipulating array size
+          and sorting speed.
         </>,
         "Sorting-Visualizer",
         "2021",
@@ -83,6 +83,23 @@ function Project() {
       ],
     },
     {
+      "Online Portfolio": [
+        portfolio,
+        <>
+          I enjoy front-end development, creating good looking UI and UX. I
+          created this responsive website using <b>React</b> which introduces
+          me, my interests, projects, work experiences and much more!
+          <br />
+          <b>My first portfolio: </b>{" "}
+          <a href="https://saqibfirstsite.netlify.app">
+            saqibfirstsite.netlify.app
+          </a>
+        </>,
+        "Online-Portfolio",
+        "2019 - 2021",
+      ],
+    },
+    {
       "Snake Game": [
         snake,
         <>
@@ -99,15 +116,17 @@ function Project() {
       ],
     },
     {
-      "Online Portfolio": [
-        portfolio,
+      "Flappy Bird Android Game": [
+        FlappyBird,
         <>
-          I enjoy front-end development, creating good looking UI and UX. I
-          created this responsive website using <b>React</b> which introduces
-          me, my interests, projects, work experiences and much more!
+          Built a clone of the addictive side-scroller game: Flappy bird.
+          Implemented core game logic and sounds using Java, Android studio and
+          LibGdx. An infinite loop was implemented which would update the screen
+          every 16.66ms i.e. 60 fps and all logic such as collision detection
+          and scores were updated within this loop.
         </>,
-        "Online-Portfolio",
-        "2019 - 2021",
+        "",
+        "2019",
       ],
     },
   ];
