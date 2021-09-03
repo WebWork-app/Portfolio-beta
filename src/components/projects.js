@@ -90,9 +90,14 @@ function Project() {
           created this responsive website using <b>React</b> which introduces
           me, my interests, projects, work experiences and much more!
           <br />
-          <b>My first portfolio: </b>{" "}
+          <b>How it was: </b>{" "}
           <a href="https://saqibfirstsite.netlify.app">
             saqibfirstsite.netlify.app
+          </a>
+<br/>
+<b>How its going: </b>{" "}
+          <a href="https://saqibali.ca">
+            saqibali.ca
           </a>
         </>,
         "Online-Portfolio",
