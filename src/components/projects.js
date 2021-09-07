@@ -15,7 +15,6 @@ import { Carousel } from "react-responsive-carousel";
 import ReactPlayer from "react-player/file";
 import GithubLink from "./helperComponents/githubLink";
 import ProjectLink from "./helperComponents/projectLink";
-import { borderRadius } from "@material-ui/system";
 
 const getConfigurableProps = () => ({
   showArrows: true,
@@ -78,10 +77,8 @@ function Project() {
           This app removes my reliance on sticky notes and efficiently tracks my
           academic progress. UI Interactivity was implemented using the{" "}
           <b>React framework</b> and styling using <b>SASS</b>. Implemented the
-          backend using Java and Spring boot which handles front-end requests.
-          <br />
-          <b>Without app: </b>26s <b>With app: </b>9s i.e. a time reduction of
-          65%.
+          backend using ExpressJS. <b>Without app: </b>26s <b>With app: </b>9s
+          i.e. a time reduction of 65%.
         </>,
         "Qalculater",
         "2021",
