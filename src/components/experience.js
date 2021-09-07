@@ -25,7 +25,7 @@ const getConfigurableProps = () => ({
   selectedItem: 0,
   interval: 100000,
   transitionTime: 300,
-  swipeScrollTolerance: 100,
+  swipeScrollTolerance: 50,
   preventMovementUntilSwipeScrollTolerance: true,
 });
 
