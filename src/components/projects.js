@@ -6,8 +6,6 @@ import qalculater from "./files/qalculater.mp4";
 import FlappyBird from "./images/flappyBird.jpg";
 import Sorting from "./files/Sorting.mp4";
 
-// images 1280 x 588
-// video 2304 1440
 import qalc from "./files/qalculater.mp4";
 import laptop from "./images/laptop.png";
 import phone from "./images/smartphone.png";
@@ -81,12 +79,9 @@ function Project() {
           academic progress. UI Interactivity was implemented using the{" "}
           <b>React framework</b> and styling using <b>SASS</b>. Implemented the
           backend using Java and Spring boot which handles front-end requests.
-          The time taken to record a single entry,
           <br />
-          <b>Without app: </b>26s
-          <br /> <b>With app: </b>9s
-          <br />
-          i.e. a time reduction of 65%.
+          <b>Without app: </b>26s <b>With app: </b>9s i.e. a time reduction of
+          65%.
         </>,
         "Qalculater",
         "2021",
@@ -106,11 +101,8 @@ function Project() {
           <a href="https://saqibfirstsite.netlify.app">
             saqibfirstsite.netlify.app
           </a>
-<br/>
-<b>How its going: </b>{" "}
-          <a href="https://saqibali.ca">
-            saqibali.ca
-          </a>
+          <br />
+          <b>How its going: </b> <a href="https://saqibali.ca">saqibali.ca</a>
         </>,
         "Online-Portfolio",
         "2019 - 2021",
