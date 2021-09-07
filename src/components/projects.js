@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from "react";
 import ps5 from "./files/ps5-project.mp4";
-import snake from "./files/snake.mp4";
+import snake from "./images/snake.png";
 import portfolio from "./files/project-online.mp4";
 import qalculater from "./files/qalculater.mp4";
-import FlappyBird from "./files/Flappy Bird.mp4";
+import FlappyBird from "./images/flappyBird.jpg";
 import Sorting from "./files/Sorting.mp4";
 
+// images 1280 x 588
+// video 2304 1440
+import qalc from "./files/qalculater.mp4";
+import laptop from "./images/laptop.png";
+import phone from "./images/smartphone.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
 import ReactPlayer from "react-player/file";
 import GithubLink from "./helperComponents/githubLink";
 import ProjectLink from "./helperComponents/projectLink";
+import { borderRadius } from "@material-ui/system";
 
 const getConfigurableProps = () => ({
   showArrows: true,
@@ -46,6 +52,8 @@ function Project() {
         </>,
         "Sorting-Visualizer",
         "2021",
+        false, // is mobile?
+        false, // is image?
       ],
     },
     {
@@ -61,6 +69,8 @@ function Project() {
         </>,
         "Playstation-5-windows",
         "2021",
+        false,
+        false,
       ],
     },
     {
@@ -80,6 +90,8 @@ function Project() {
         </>,
         "Qalculater",
         "2021",
+        true,
+        false,
       ],
     },
     {
@@ -97,6 +109,8 @@ function Project() {
         </>,
         "Online-Portfolio",
         "2019 - 2021",
+        false,
+        false,
       ],
     },
     {
@@ -113,6 +127,8 @@ function Project() {
         </>,
         "",
         "2020",
+        false,
+        true,
       ],
     },
     {
@@ -127,6 +143,8 @@ function Project() {
         </>,
         "",
         "2019",
+        true,
+        true,
       ],
     },
   ];
@@ -201,14 +219,46 @@ function Project() {
             return (
               <>
                 <div class="single" style={{ paddingTop: "0px" }}>
-                  <ReactPlayer
-                    id="player"
-                    loop={true}
-                    playing={true}
-                    url={Object.entries(project)[0][1][0]}
-                    muted={true}
-                    data-aos="fade-right"
-                  />
+                  {!Object.entries(project)[0][1][4] ? (
+                    <div class="player" data-aos="fade-right">
+                      <img src={laptop} />
+                      <div class="hello">
+                        {Object.entries(project)[0][1][5] ? (
+                          <img src={Object.entries(project)[0][1][0]} />
+                        ) : (
+                          <ReactPlayer
+                            id="player"
+                            width="-webkit-fill-available"
+                            height="fit-content"
+                            loop={true}
+                            playing={true}
+                            url={Object.entries(project)[0][1][0]}
+                            muted={true}
+                          />
+                        )}
+                      </div>
+                    </div>
+                  ) : (
+                    <div class="player" data-aos="fade-right">
+                      <img src={phone} class="phone" />
+                      <div class="hello2">
+                        {Object.entries(project)[0][1][5] ? (
+                          <img src={Object.entries(project)[0][1][0]} />
+                        ) : (
+                          <ReactPlayer
+                            id="player"
+                            width="fit-content"
+                            height="fit-content"
+                            loop={true}
+                            playing={true}
+                            url={qalc}
+                            muted={true}
+                          />
+                        )}
+                      </div>
+                    </div>
+                  )}
+
                   <div class="project-info">
                     <h3 data-aos="fade-left">
                       {Object.entries(project)[0][0]}

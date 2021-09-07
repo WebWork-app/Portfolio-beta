@@ -71,6 +71,60 @@
       padding-top: 40px;
       padding-bottom: 80px;
 
+      .player {
+        position: relative;
+        img {
+          width: 500px;
+          height: 293px;
+          margin: 20px;
+          @media (max-width: 500px) {
+            height: 209px;
+            width: 360px;
+          }
+        }
+        .phone {
+          width: auto;
+          height: 293px;
+          margin: 20px;
+        }
+        .hello {
+          position: absolute;
+          left: 81px;
+          top: 39px;
+          width: 379px;
+          height: 237px;
+          border-radius: 20px;
+          @media (max-width: 500px) {
+            left: 63px;
+            top: 32px;
+            width: 274px;
+            height: 142px;
+          }
+          img {
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            margin: 0;
+          }
+        }
+        .hello2 {
+          position: absolute;
+          left: 21px;
+          top: 22px;
+          z-index: -1;
+          width: 134px;
+          height: 292px;
+          img {
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            margin: 0;
+            border-radius: 20px;
+          }
+          video {
+            border-radius: 11px;
+            object-fit: fill;
+          }
+        }
+      }
       .phone-video {
         display: block;
         width: 66%;
@@ -109,6 +163,7 @@
       }
     }
     .project-info {
+      padding: 50px 10px;
       max-width: 46%;
       .links {
         display: flex;
