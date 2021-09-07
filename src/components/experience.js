@@ -229,6 +229,7 @@ function Experience() {
                     <div
                       data-aos="fade-left"
                       class="project-info project-info-greater"
+                      style={{ paddingTop: "0px" }}
                     >
                       <ul>{Object.entries(project)[0][1][3]}</ul>
                     </div>
