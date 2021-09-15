@@ -7,6 +7,10 @@
     margin: 0 auto;
     padding-top: 40px;
     width: 100%;
+    .header-btn {
+      background-color: transparent;
+      border: none;
+    }
   }
   .all-companies {
     width: 50%;
@@ -15,6 +19,7 @@
     @media (max-width: 600px) {
       width: 100%;
     }
+
     .company-container {
       @include box-shadow(rgba(149, 157, 165, 0.2));
       @include flex-center(column);
@@ -66,11 +71,18 @@
   .projects {
     z-index: 10;
     padding-bottom: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+    .gridView {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
     .single {
       @include flex-center(row);
       padding-top: 40px;
       padding-bottom: 80px;
-
+      margin: 0 auto;
       .player {
         position: relative;
         img {

@@ -12,6 +12,7 @@ import phone from "./images/smartphone.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
+import { Grid1x2Fill } from "react-bootstrap-icons";
 import ReactPlayer from "react-player/file";
 import GithubLink from "./helperComponents/githubLink";
 import ProjectLink from "./helperComponents/projectLink";
@@ -150,7 +151,7 @@ function Project() {
     "Online Portfolio": "https://saqibali.ca",
   };
   const [repo, setRepos] = useState([]);
-
+  const [gridView, setView] = useState(false);
   useEffect(() => {
     fetch("https://api.github.com/users/SaqibA1i/repos")
       .then((response) => {
@@ -178,105 +179,192 @@ function Project() {
         class="slider-header"
         style={{ "background-color": "transparent" }}
       >
-        Projects
+        Projects{" "}
+        <button
+          class="header-btn"
+          onClick={() => {
+            setView(!gridView);
+            if (gridView) {
+              document.getElementById("projects").style.maxWidth = "1200px";
+            } else {
+              document.getElementById("projects").style.maxWidth = "100%";
+            }
+          }}
+        >
+          <Grid1x2Fill size={20} color={"#c50000"} />
+        </button>
         <hr />
       </h2>
-      <div class="projects" style={{ "max-width": "1200px", margin: "0 auto" }}>
-        <div class="all-companies">
-          {projects.map((project, index) => {
-            return (
-              <div
-                id={"company-container-" + index}
-                class="company-container"
-                style={{
-                  width: "auto",
-                  height: "0px",
-                  backgroundColor: "tansparent",
-                  color: "#333",
-                }}
-                onClick={() => {
-                  document
-                    .getElementsByClassName("control-dots")[1]
-                    .getElementsByClassName("dot")
-                    [index].click();
-                }}
-              >
-                <a class="main-btn" style={{ fontSize: "10px" }}>
-                  <p class="center">{Object.entries(project)[0][0]}</p>
-                </a>
-              </div>
-            );
-          })}
-        </div>
-        <Carousel width="inherit" {...getConfigurableProps()}>
-          {projects.map((project) => {
-            return (
-              <>
-                <div class="single" style={{ paddingTop: "0px" }}>
-                  {!Object.entries(project)[0][1][4] ? (
-                    <div class="player" data-aos="fade-right">
-                      <img src={laptop} />
-                      <div class="hello">
-                        {Object.entries(project)[0][1][5] ? (
-                          <img src={Object.entries(project)[0][1][0]} />
-                        ) : (
-                          <ReactPlayer
-                            id="player"
-                            width="-webkit-fill-available"
-                            height="fit-content"
-                            loop={true}
-                            playing={true}
-                            url={Object.entries(project)[0][1][0]}
-                            muted={true}
-                          />
-                        )}
+      <div class="projects" id="projects">
+        {!gridView && (
+          <div class="all-companies">
+            {projects.map((project, index) => {
+              return (
+                <div
+                  id={"company-container-" + index}
+                  class="company-container"
+                  style={{
+                    width: "auto",
+                    height: "0px",
+                    backgroundColor: "tansparent",
+                    color: "#333",
+                  }}
+                  onClick={() => {
+                    document
+                      .getElementsByClassName("control-dots")[1]
+                      .getElementsByClassName("dot")
+                      [index].click();
+                  }}
+                >
+                  <a class="main-btn" style={{ fontSize: "10px" }}>
+                    <p class="center">{Object.entries(project)[0][0]}</p>
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        )}
+        {!gridView ? (
+          <Carousel width="inherit" {...getConfigurableProps()}>
+            {projects.map((project) => {
+              return (
+                <>
+                  <div class="single" style={{ paddingTop: "0px" }}>
+                    {!Object.entries(project)[0][1][4] ? (
+                      <div class="player" data-aos="fade-right">
+                        <img src={laptop} />
+                        <div class="hello">
+                          {Object.entries(project)[0][1][5] ? (
+                            <img src={Object.entries(project)[0][1][0]} />
+                          ) : (
+                            <ReactPlayer
+                              id="player"
+                              width="-webkit-fill-available"
+                              height="fit-content"
+                              loop={true}
+                              playing={true}
+                              url={Object.entries(project)[0][1][0]}
+                              muted={true}
+                            />
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  ) : (
-                    <div class="player" data-aos="fade-right">
-                      <img src={phone} class="phone" />
-                      <div class="hello2">
-                        {Object.entries(project)[0][1][5] ? (
-                          <img src={Object.entries(project)[0][1][0]} />
-                        ) : (
-                          <ReactPlayer
-                            id="player"
-                            width="fit-content"
-                            height="fit-content"
-                            loop={true}
-                            playing={true}
-                            url={qalc}
-                            muted={true}
-                          />
-                        )}
+                    ) : (
+                      <div class="player" data-aos="fade-right">
+                        <img src={phone} class="phone" />
+                        <div class="hello2">
+                          {Object.entries(project)[0][1][5] ? (
+                            <img src={Object.entries(project)[0][1][0]} />
+                          ) : (
+                            <ReactPlayer
+                              id="player"
+                              width="fit-content"
+                              height="fit-content"
+                              loop={true}
+                              playing={true}
+                              url={qalc}
+                              muted={true}
+                            />
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  )}
+                    )}
 
-                  <div class="project-info">
-                    <h3 data-aos="fade-left">
-                      {Object.entries(project)[0][0]}
-                      <b class="project-tag">
-                        {Object.entries(project)[0][1][3]}
-                      </b>
-                    </h3>
-                    <br />
-                    <p data-aos="fade-left">
-                      {Object.entries(project)[0][1][1]}
-                    </p>
-                    <div class="links">
-                      <GithubLink project={project} repo={repo} />
-                      <ProjectLink
-                        link={links}
-                        projectName={Object.entries(project)[0][0]}
-                      />
+                    <div class="project-info">
+                      <h3 data-aos="fade-left">
+                        {Object.entries(project)[0][0]}
+                        <b class="project-tag">
+                          {Object.entries(project)[0][1][3]}
+                        </b>
+                      </h3>
+                      <br />
+                      <p data-aos="fade-left">
+                        {Object.entries(project)[0][1][1]}
+                      </p>
+                      <div class="links">
+                        <GithubLink project={project} repo={repo} />
+                        <ProjectLink
+                          link={links}
+                          projectName={Object.entries(project)[0][0]}
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </>
-            );
-          })}
-        </Carousel>
+                </>
+              );
+            })}
+          </Carousel>
+        ) : (
+          <div class="gridView">
+            {projects.map((project) => {
+              return (
+                <>
+                  <div class="single" style={{ paddingTop: "0px" }}>
+                    {!Object.entries(project)[0][1][4] ? (
+                      <div class="player" data-aos="fade-right">
+                        <img src={laptop} />
+                        <div class="hello">
+                          {Object.entries(project)[0][1][5] ? (
+                            <img src={Object.entries(project)[0][1][0]} />
+                          ) : (
+                            <ReactPlayer
+                              id="player"
+                              width="-webkit-fill-available"
+                              height="fit-content"
+                              loop={true}
+                              playing={true}
+                              url={Object.entries(project)[0][1][0]}
+                              muted={true}
+                            />
+                          )}
+                        </div>
+                      </div>
+                    ) : (
+                      <div class="player" data-aos="fade-right">
+                        <img src={phone} class="phone" />
+                        <div class="hello2">
+                          {Object.entries(project)[0][1][5] ? (
+                            <img src={Object.entries(project)[0][1][0]} />
+                          ) : (
+                            <ReactPlayer
+                              id="player"
+                              width="fit-content"
+                              height="fit-content"
+                              loop={true}
+                              playing={true}
+                              url={qalc}
+                              muted={true}
+                            />
+                          )}
+                        </div>
+                      </div>
+                    )}
+
+                    <div class="project-info">
+                      <h3 data-aos="fade-left">
+                        {Object.entries(project)[0][0]}
+                        <b class="project-tag">
+                          {Object.entries(project)[0][1][3]}
+                        </b>
+                      </h3>
+                      <br />
+                      <p data-aos="fade-left">
+                        {Object.entries(project)[0][1][1]}
+                      </p>
+                      <div class="links">
+                        <GithubLink project={project} repo={repo} />
+                        <ProjectLink
+                          link={links}
+                          projectName={Object.entries(project)[0][0]}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </>
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );
