@@ -100,12 +100,12 @@
           margin: 20px;
         }
         .hello {
-          position: absolute;
-          left: 80px;
-          top: 37px;
-          width: 381px;
-          height: 237px;
-          border-radius: 20px;
+             position: absolute;
+            left: 72px;
+            top: 37px;
+            width: 396px;
+            height: 254px;
+            background-color: black;
           @media (max-width: 500px) {
             left: 63px;
             top: 32px;
@@ -116,6 +116,9 @@
             width: -webkit-fill-available;
             height: -webkit-fill-available;
             margin: 0;
+          }
+          video{
+              border-radius: 5px;
           }
         }
         .hello2 {
