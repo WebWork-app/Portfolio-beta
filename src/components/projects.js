@@ -9,6 +9,7 @@ import Sorting from "./files/Sorting.mp4";
 import qalc from "./files/qalculater.mp4";
 import laptop from "./images/laptop.png";
 import phone from "./images/smartphone.png";
+import data_structures from "./images/data_structures_algorithms.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
@@ -47,11 +48,47 @@ function Project() {
           famous sorting algorithms. Incorporated Merge Sort, Quick Sort and
           Bubble Sort. Added sliders for the purposes of manipulating array size
           and sorting speed.
+          <hr class="seperate-up-down" />
+          <b class="purple">Utilized: </b> React, TypeScript
         </>,
         "Sorting-Visualizer",
         "2021",
         false, // is mobile?
         false, // is image?
+      ],
+    },
+    {
+      Qalculater: [
+        qalculater,
+        <>
+          This app removes my reliance on sticky notes and efficiently tracks my
+          academic progress. UI Interactivity was implemented using the{" "}
+          <b>React framework</b> and styling using <b>SASS</b>. Implemented the
+          backend using ExpressJS. <b>Without app: </b>26s <b>With app: </b>9s
+          i.e. a time reduction of 65%.
+          <hr class="seperate-up-down" />
+          <b class="purple">Utilized: </b> React, SASS, MongoDB, PassportJS,
+          ExpressJS
+        </>,
+        "Qalculater",
+        "2021",
+        true,
+        false,
+      ],
+    },
+    {
+      "Data Structures and Algorithms": [
+        data_structures,
+        <>
+          Custom Implementations of some famous <b>Data Structures</b> and{" "}
+          <b>Algorithms</b> in C++
+          <hr class="seperate-up-down" />
+          <b class="purple">Utilized: </b> C++, OOP principles
+        </>,
+        "Data-Structures",
+        "2021",
+        false,
+        true,
       ],
     },
     {
@@ -64,26 +101,12 @@ function Project() {
           was implemented using Kodi Incorporated the Xinput api to report
           information regarding controllers in UI The skin can be viewed here:
           Play Station 5 Skin
+          <hr class="seperate-up-down" />
+          <b class="purple">Utilized: </b> Python, Kodi
         </>,
         "Playstation-5-windows",
         "2021",
         false,
-        false,
-      ],
-    },
-    {
-      Qalculater: [
-        qalculater,
-        <>
-          This app removes my reliance on sticky notes and efficiently tracks my
-          academic progress. UI Interactivity was implemented using the{" "}
-          <b>React framework</b> and styling using <b>SASS</b>. Implemented the
-          backend using ExpressJS. <b>Without app: </b>26s <b>With app: </b>9s
-          i.e. a time reduction of 65%.
-        </>,
-        "Qalculater",
-        "2021",
-        true,
         false,
       ],
     },
@@ -101,6 +124,8 @@ function Project() {
           </a>
           <br />
           <b>How its going: </b> <a href="https://saqibali.ca">saqibali.ca</a>
+          <hr class="seperate-up-down" />
+          <b class="purple">Utilized: </b> React, SASS
         </>,
         "Online-Portfolio",
         "2019 - 2021",
@@ -119,6 +144,8 @@ function Project() {
           <i>Abstraction, </i>
           <i>Encapsulation </i>
           to provide a clear modular structure
+          <hr class="seperate-up-down" />
+          <b class="purple">Utilized: </b> C++, OOP principles
         </>,
         "",
         "2020",
@@ -135,6 +162,8 @@ function Project() {
           LibGdx. An infinite loop was implemented which would update the screen
           every 16.66ms i.e. 60 fps and all logic such as collision detection
           and scores were updated within this loop.
+          <hr class="seperate-up-down" />
+          <b class="purple">Utilized: </b> Java, LibGDX, Android Studio
         </>,
         "",
         "2019",

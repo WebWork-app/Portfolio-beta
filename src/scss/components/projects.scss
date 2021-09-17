@@ -319,3 +319,10 @@
     background-image: url("");
   }
 }
+.purple {
+  color: $main-accent-light;
+}
+.seperate-up-down {
+  margin: 15px 0;
+  border: solid 1px $main-accent-light;
+}
