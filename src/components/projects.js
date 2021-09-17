@@ -85,7 +85,7 @@ function Project() {
           <hr class="seperate-up-down" />
           <b class="purple">Utilized: </b> C++, OOP principles
         </>,
-        "Data-Structures",
+        "Data-Structures-and-Algorithms",
         "2021",
         false,
         true,
