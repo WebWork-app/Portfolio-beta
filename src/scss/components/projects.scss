@@ -216,12 +216,6 @@
       }
       @media (max-width: $mid-breakpoint) {
         margin: 0px 45px;
-        h3 {
-          text-align: center;
-        }
-        p {
-          text-align: center;
-        }
       }
 
       ul {
@@ -325,4 +319,9 @@
 .seperate-up-down {
   margin: 15px 0;
   border: solid 1px $main-accent-light;
+  background-color: $main-accent-light;
+}
+.ahref {
+  text-decoration: none;
+  color: $main-accent;
 }

@@ -115,15 +115,18 @@ function Project() {
         portfolio,
         <>
           I enjoy front-end development, creating good looking UI and UX. I
-          created this responsive website using <b>React</b> which introduces
-          me, my interests, projects, work experiences and much more!
+          created this website which introduces me, my interests, projects, work
+          experiences and much more!
           <br />
           <b>How it was: </b>{" "}
-          <a href="https://saqibfirstsite.netlify.app">
+          <a class="ahref" href="https://saqibfirstsite.netlify.app">
             saqibfirstsite.netlify.app
           </a>
           <br />
-          <b>How its going: </b> <a href="https://saqibali.ca">saqibali.ca</a>
+          <b>How its going: </b>{" "}
+          <a class="ahref" href="https://saqibali.ca">
+            saqibali.ca
+          </a>
           <hr class="seperate-up-down" />
           <b class="purple">Utilized: </b> React, SASS
         </>,
