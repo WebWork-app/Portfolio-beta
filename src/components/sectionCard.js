@@ -1,6 +1,6 @@
 import Icon from "./images/profile.jpg";
 import bg from "./images/body-wave2.png";
-import resume from "./files/Resume 2A.docx.pdf";
+import resume from "./files/Resume Saqib Ali.pdf";
 import React, { useEffect } from "react";
 
 function SectionCard() {
