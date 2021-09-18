@@ -58,7 +58,7 @@ function Project() {
       ],
     },
     {
-      Qalculater: [
+      "Grades Tracker Web App": [
         qalculater,
         <>
           This app removes my reliance on sticky notes and efficiently tracks my
