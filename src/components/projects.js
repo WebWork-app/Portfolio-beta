@@ -178,7 +178,7 @@ function Project() {
   const links = {
     "Sorting Visualizer": "https://sort-app.netlify.app/",
     "PS5 UI for Windows!": "https://youtu.be/SHyACovTXSE",
-    Qalculater: "https://qalculater.netlify.app/login",
+    "Grades Tracker Web App": "https://qalculater.netlify.app/login",
     "Snake Game": "",
     "Online Portfolio": "https://saqibali.ca",
   };
