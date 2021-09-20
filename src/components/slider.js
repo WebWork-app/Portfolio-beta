@@ -6,6 +6,8 @@ import HTML from "./images/html.png";
 import Css from "./images/css.png";
 import React from "./images/react.png";
 import Spring from "./images/spring.png";
+import Docker from "./images/Docker.png";
+import NodeJS from "./images/nodeJS.png";
 
 function Slider() {
   const technolgies = [
@@ -17,6 +19,8 @@ function Slider() {
     { Html: HTML },
     { Sass: Css },
     { React: React },
+    { Docker: Docker },
+    { "Node JS": NodeJS },
   ];
   return (
     <div class="slider-container">

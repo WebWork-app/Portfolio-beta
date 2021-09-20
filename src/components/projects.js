@@ -42,7 +42,7 @@ function Project() {
   const projects = [
     {
       "Sorting Visualizer": [
-        Sorting,
+        Sorting, // video or image
         <>
           Developed a clean web interface to visualize the progress of some
           famous sorting algorithms. Incorporated Merge Sort, Quick Sort and
@@ -51,7 +51,7 @@ function Project() {
           <hr class="seperate-up-down" />
           <b class="purple">Utilized: </b> React, TypeScript
         </>,
-        "Sorting-Visualizer",
+        "Sorting-Visualizer", // github link
         "2021",
         false, // is mobile?
         false, // is image?
@@ -175,6 +175,7 @@ function Project() {
       ],
     },
   ];
+
   const links = {
     "Sorting Visualizer": "https://sort-app.netlify.app/",
     "PS5 UI for Windows!": "https://youtu.be/SHyACovTXSE",
