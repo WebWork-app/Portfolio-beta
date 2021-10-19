@@ -34,35 +34,38 @@ function Experience() {
     {
       CGI: [
         cgi,
-        <>Developer</>,
+        <>Backend Developer</>,
         <>May 2021 - August 2021</>,
         <>
           <li>
             <span>
-              Spearheaded the research and integration of the Deck tool in a
-              Jenkins CICD pipeline to streamline and secure changes made to the{" "}
-              <em>Kong Api Gateway</em>.
+              Pioneered the creation of a backend server using{" "}
+              <em>Express.js</em> to scrape and process metrics from the{" "}
+              <em>Keycloack Identity Provider</em>, integral to the operation of
+              company-wide services
             </span>
           </li>
           <li>
             <span>
-              Developed <em>python scripts</em> to automate the warehousing of
-              EFK logs.
+              Engineered an internal service using <em>Python</em> scripts to
+              automate the warehousing of <em>Elastic Stack</em> logs, resulting
+              in the reduction of backup time by <em>80%</em>.
             </span>
           </li>
           <li>
             <span>
-              Leveraged knowledge in <em>Java</em>, <em>Springboot</em> to add
-              user context to a web application by using interceptors and
-              deploying the app via <em>Docker</em>. The app was accessed
-              through a reverse proxy integrated with the Keycloack IDP.
+              Utilized <em>Java</em> with <em>Spring</em> interceptors to
+              implement Role Based Access Control to a web application, ensuring
+              authorized users have access to specific services.
             </span>
           </li>
           <li>
             <span>
-              Created a <em>ExpressJS</em> application that scrapes metrics from
-              the Keycloack IDP and outputs a 200 / 500 http response based on
-              custom health checks
+              Orchestrated a full technical redesign of making updates to the
+              API gateway by utilizing the Deck tool integrated into a{" "}
+              <em>Jenkins</em>
+              CICD pipeline, increasing team efficiency by reducing 50% of the
+              time spent making updates.
             </span>
           </li>
         </>,
@@ -76,8 +79,9 @@ function Experience() {
         <>
           <li>
             <span>
-              Co-developed a responsive website to showcase proprietary company
-              icons and optimize the UXD team’s workflow
+              Rebuilt a website to showcase UXD team icons using <em>React</em>{" "}
+              and JavaScript, drastically reducing site load times by{" "}
+              <em>97%</em>.
             </span>
           </li>
           <li>

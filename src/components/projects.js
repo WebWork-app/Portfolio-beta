@@ -5,9 +5,10 @@ import portfolio from "./files/project-online.mp4";
 import qalculater from "./files/qalculater.mp4";
 import FlappyBird from "./images/flappyBird.jpg";
 import Sorting from "./files/Sorting.mp4";
-
+import Graph from "./files/graph_traversal.mp4";
 import qalc from "./files/qalculater.mp4";
 import laptop from "./images/laptop.png";
+import schmart from "./files/schmart.mp4";
 import phone from "./images/smartphone.png";
 import data_structures from "./images/data_structures_algorithms.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -40,6 +41,47 @@ const getConfigurableProps = () => ({
 });
 function Project() {
   const projects = [
+    {
+      Schmart: [
+        schmart, // video or image
+        <>
+          <em>
+            <i>1st place in Hack the Valley V - 500+ participants</i>
+          </em>
+          <br />
+          Spearheaded the development of a full-stack mobile application to
+          streamline user shopping experience, utilizing React Native, Python,
+          Flask, SQL. Implemented a product scanning system by leveraging React
+          Native and the Expo barcode scanner, enabling users to meet their diet
+          goals by dynamically tracking the nutrient content of scanned
+          products. Structured a REST API using Python and Flask to effectively
+          update user information stored in an SQL database.
+          <hr class="seperate-up-down" />
+          <b class="purple">Utilized: </b> React Native, TypeScript, Flask,
+          Python, SQL
+        </>,
+        "Graph-Traversal-Visualizer", // github link
+        "2021",
+        true, // is mobile?
+        false, // is image?
+      ],
+    },
+    {
+      "Graph Traversal Algorithm Visualizer": [
+        Graph, // video or image
+        <>
+          Engineered an interactive 2D graphical interface using React for
+          visualizing different graph traversal algorithms. Implemented Breadth
+          First Search and Depth First Search.
+          <hr class="seperate-up-down" />
+          <b class="purple">Utilized: </b> React, TypeScript
+        </>,
+        "Graph-Traversal-Visualizer", // github link
+        "2021",
+        false, // is mobile?
+        false, // is image?
+      ],
+    },
     {
       "Sorting Visualizer": [
         Sorting, // video or image
@@ -182,6 +224,8 @@ function Project() {
     "Grades Tracker Web App": "https://qalculater.netlify.app/login",
     "Snake Game": "",
     "Online Portfolio": "https://saqibali.ca",
+    "Graph Traversal Algorithm Visualizer":
+      "https://graph-algorithm.netlify.app/",
   };
   const [repo, setRepos] = useState([]);
   const [gridView, setView] = useState(false);
@@ -295,7 +339,7 @@ function Project() {
                               height="fit-content"
                               loop={true}
                               playing={true}
-                              url={qalc}
+                              url={Object.entries(project)[0][1][0]}
                               muted={true}
                             />
                           )}
