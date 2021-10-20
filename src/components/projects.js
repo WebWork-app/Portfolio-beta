@@ -60,7 +60,7 @@ function Project() {
           <b class="purple">Utilized: </b> React Native, TypeScript, Flask,
           Python, SQL
         </>,
-        "Graph-Traversal-Visualizer", // github link
+        "https://github.com/Shmart-app", // github link
         "2021",
         true, // is mobile?
         false, // is image?
@@ -76,7 +76,7 @@ function Project() {
           <hr class="seperate-up-down" />
           <b class="purple">Utilized: </b> React, TypeScript
         </>,
-        "Graph-Traversal-Visualizer", // github link
+        "https://github.com/SaqibA1i/Graph-Traversal-Visualizer", // github link
         "2021",
         false, // is mobile?
         false, // is image?
@@ -93,7 +93,7 @@ function Project() {
           <hr class="seperate-up-down" />
           <b class="purple">Utilized: </b> React, TypeScript
         </>,
-        "Sorting-Visualizer", // github link
+        "https://github.com/SaqibA1i/Sorting-Visualizer", // github link
         "2021",
         false, // is mobile?
         false, // is image?
@@ -112,7 +112,7 @@ function Project() {
           <b class="purple">Utilized: </b> React, SASS, MongoDB, PassportJS,
           ExpressJS
         </>,
-        "Qalculater",
+        "https://github.com/SaqibA1i/Qalculater",
         "2021",
         true,
         false,
@@ -127,7 +127,7 @@ function Project() {
           <hr class="seperate-up-down" />
           <b class="purple">Utilized: </b> C++, OOP principles
         </>,
-        "Data-Structures-and-Algorithms",
+        "https://github.com/SaqibA1i/Data-Structures-and-Algorithms",
         "2021",
         false,
         true,
@@ -146,7 +146,7 @@ function Project() {
           <hr class="seperate-up-down" />
           <b class="purple">Utilized: </b> Python, Kodi
         </>,
-        "Playstation-5-windows",
+        "https://github.com/SaqibA1i/Playstation-5-windows",
         "2021",
         false,
         false,
@@ -172,7 +172,7 @@ function Project() {
           <hr class="seperate-up-down" />
           <b class="purple">Utilized: </b> React, SASS
         </>,
-        "Online-Portfolio",
+        "https://github.com/SaqibA1i/Online-Portfolio",
         "2019 - 2021",
         false,
         false,

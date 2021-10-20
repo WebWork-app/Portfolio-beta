@@ -7,7 +7,7 @@ function GithubLink({ project, repo }) {
         href={
           !repo.includes(Object.entries(project)[0][1][2])
             ? "javascript:void(0)"
-            : "https://github.com/SaqibA1i/" + Object.entries(project)[0][1][2]
+            : Object.entries(project)[0][1][2]
         }
         class={
           !repo.includes(Object.entries(project)[0][1][2])

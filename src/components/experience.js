@@ -171,7 +171,7 @@ function Experience() {
       ],
     },
   ];
-  useEffect(() => {}, []);
+
   return (
     <div style={{ overflow: "hidden" }}>
       <img src={wave4} class="top-wave" />
