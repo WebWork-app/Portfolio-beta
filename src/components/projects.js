@@ -409,7 +409,7 @@ function Project() {
                               height="fit-content"
                               loop={true}
                               playing={true}
-                              url={qalc}
+                              url={Object.entries(project)[0][1][0]}
                               muted={true}
                             />
                           )}
