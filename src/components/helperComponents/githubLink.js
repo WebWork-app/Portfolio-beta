@@ -5,12 +5,12 @@ function GithubLink({ project, repo }) {
     <div class="project-btns" data-aos="zoom-in-up">
       <a
         href={
-          !repo.includes(Object.entries(project)[0][1][2])
+          Object.entries(project)[0][1][2] == ""
             ? "javascript:void(0)"
             : Object.entries(project)[0][1][2]
         }
         class={
-          !repo.includes(Object.entries(project)[0][1][2])
+          Object.entries(project)[0][1][2] == ""
             ? "disabled main-btn"
             : "main-btn"
         }
