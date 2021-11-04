@@ -48,14 +48,16 @@ function Project() {
           <em>
             <i>1st place in Hack the Valley V - 500+ participants</i>
           </em>
-          <br />
+          <hr class="seperate-up-down" />
           Spearheaded the development of a full-stack mobile application to
-          streamline user shopping experience, utilizing React Native, Python,
-          Flask, SQL. Implemented a product scanning system by leveraging React
-          Native and the Expo barcode scanner, enabling users to meet their diet
-          goals by dynamically tracking the nutrient content of scanned
-          products. Structured a REST API using Python and Flask to effectively
-          update user information stored in an SQL database.
+          streamline user shopping experience, utilizing <b>
+            React Native
+          </b>, <b>Python</b>,<b>Flask</b>, <b>SQL</b>. Implemented a product
+          scanning system by leveraging React Native and the Expo barcode
+          scanner, enabling users to meet their diet goals by dynamically
+          tracking the nutrient content of scanned products. Structured a REST
+          API using Python and Flask to effectively update user information
+          stored in an SQL database.
           <hr class="seperate-up-down" />
           <b class="purple">Utilized: </b> React Native, TypeScript, Flask,
           Python, SQL

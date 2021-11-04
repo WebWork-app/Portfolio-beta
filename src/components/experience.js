@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { ArrowBarLeft, ArrowBarRight, Calendar2 } from "react-bootstrap-icons";
+import React from "react";
+import { Calendar2, GeoAltFill, BriefcaseFill } from "react-bootstrap-icons";
 import opentext from "./images/opentext.png";
 import wework from "./images/WeWork.png";
 import cgi from "./images/cgi.png";
 import wave4 from "./images/wave4.svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import primer from "./images/primer.png";
 
 import bg from "./images/body-wave2.png";
 const getConfigurableProps = () => ({
@@ -31,6 +32,21 @@ const getConfigurableProps = () => ({
 
 function Experience() {
   const experiences = [
+    {
+      "primer.ai": [
+        primer,
+        <>Software Engineer</>,
+        <>May 2021 - August 2021</>,
+        <>
+          <li>
+            <i>
+              <em>Incoming Software Engineer</em>
+            </i>
+          </li>
+        </>,
+        "San Fransisco, CA",
+      ],
+    },
     {
       CGI: [
         cgi,
@@ -69,6 +85,7 @@ function Experience() {
             </span>
           </li>
         </>,
+        "Markham, ON",
       ],
     },
     {
@@ -120,6 +137,7 @@ function Experience() {
             </span>
           </li>
         </>,
+        "Waterloo, ON",
       ],
     },
     {
@@ -168,6 +186,7 @@ function Experience() {
             </span>
           </li>
         </>,
+        "Toronto, ON",
       ],
     },
   ];
@@ -223,10 +242,20 @@ function Experience() {
                         data-aos="fade-right"
                       />
                       <h3 data-aos="fade-right" data-aos-delay="60">
-                        {Object.entries(project)[0][1][1]}
-                        <h5 data-aos-delay="120">
-                          <Calendar2 />{" "}
-                          <i>{Object.entries(project)[0][1][2]}</i>
+                        <h5 class="job-info" data-aos-delay="120">
+                          <BriefcaseFill />
+                          {"     "}
+                          <b>{Object.entries(project)[0][1][1]}</b>
+                        </h5>
+                        <h5 class="job-info" data-aos-delay="120">
+                          <Calendar2 />
+                          {"     "}
+                          {Object.entries(project)[0][1][2]}
+                        </h5>
+                        <h5 class="job-info" data-aos-delay="120">
+                          <GeoAltFill />
+                          {"     "}
+                          {Object.entries(project)[0][1][4]}
                         </h5>
                       </h3>
                     </div>

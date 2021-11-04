@@ -8,6 +8,8 @@ import React from "./images/react.png";
 import Spring from "./images/spring.png";
 import Docker from "./images/Docker.png";
 import NodeJS from "./images/nodeJS.png";
+import Git from "./images/git.png";
+import TypeScript from "./images/typescript.png";
 
 function Slider() {
   const technolgies = [
@@ -15,12 +17,14 @@ function Slider() {
     { Java: Java },
     { Spring: Spring },
     { "Java Script": JS },
+    { "Type Script": TypeScript },
     { Python: Python },
     { Html: HTML },
     { Sass: Css },
     { React: React },
     { Docker: Docker },
     { "Node JS": NodeJS },
+    { Git: Git },
   ];
   return (
     <div class="slider-container">
