@@ -42,7 +42,7 @@
     width: $size;
     animation-delay: -$i * 0.2s;
     animation: move random(20s) infinite alternate-reverse ease-in-out;
-    left: random(600) * 2px;
+    left: random(100) * 1%;
     top: random(500) * 1px;
   }
 }
