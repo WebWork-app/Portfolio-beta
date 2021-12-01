@@ -5,6 +5,13 @@ import React, { useEffect } from "react";
 
 function SectionCard() {
   const Jobs = ["Frontend Developer", "Backend Developer", "DevOps Developer"];
+  let bubbles = [];
+  const addBubbles = () => {
+    for (let i = 0; i < 100; i++) {
+      bubbles.push(<div class="bubble"></div>);
+    }
+    return bubbles;
+  };
   useEffect(() => {
     document
       .getElementById("dev")
@@ -14,6 +21,7 @@ function SectionCard() {
         let index = (Jobs.indexOf(job) + 1) % Jobs.length;
         document.getElementById("dev").innerText = Jobs[index];
       });
+
     window.addEventListener("scroll", () => {
       if (window.scrollY < 50) {
         document.getElementById("navbar").className = "trans";
@@ -27,6 +35,10 @@ function SectionCard() {
     <>
       <div class="main">
         <img data-aos="zoom-out-up" style={{ "z-index": "1300" }} src={Icon} />
+        <div class="bubble-container">
+          <div class="bubble-wrap">{addBubbles()}</div>
+        </div>
+
         <div id="two" class="main-img">
           <img
             id="image1"

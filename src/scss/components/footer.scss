@@ -10,8 +10,7 @@
 .footer {
   background: $main-accent;
   height: auto;
-  border-top: 7px solid #c6bbff;
-
+  border-top: 7px solid $main-accent-light;
   .footer-content {
     padding: 50px 0;
     border-radius: 50% 50% 0 0;
