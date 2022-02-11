@@ -7,7 +7,7 @@ function SectionCard() {
   const Jobs = ["Frontend Developer", "Backend Developer", "DevOps Developer"];
   let bubbles = [];
   const addBubbles = () => {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 50; i++) {
       bubbles.push(<div class="bubble"></div>);
     }
     return bubbles;
