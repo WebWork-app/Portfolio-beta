@@ -69,6 +69,25 @@ function Project() {
       ],
     },
     {
+      "Grades Tracker Web App": [
+        qalculater,
+        <>
+          This app removes my reliance on sticky notes and efficiently tracks my
+          academic progress. UI Interactivity was implemented using the{" "}
+          <b>React framework</b> and styling using <b>SASS</b>. Implemented the
+          backend using ExpressJS. <b>Without app: </b>26s <b>With app: </b>9s
+          i.e. a time reduction of 65%.
+          <hr class="seperate-up-down" />
+          <b class="purple">Utilized: </b> React, Express, SASS, MongoDB,
+          Typescript, Google Oauth
+        </>,
+        "https://github.com/SaqibA1i/Qalculater/tree/v2.0",
+        "2021 - present",
+        true,
+        false,
+      ],
+    },
+    {
       "Graph Traversal Algorithm Visualizer": [
         Graph, // video or image
         <>
@@ -101,25 +120,7 @@ function Project() {
         false, // is image?
       ],
     },
-    {
-      "Grades Tracker Web App": [
-        qalculater,
-        <>
-          This app removes my reliance on sticky notes and efficiently tracks my
-          academic progress. UI Interactivity was implemented using the{" "}
-          <b>React framework</b> and styling using <b>SASS</b>. Implemented the
-          backend using ExpressJS. <b>Without app: </b>26s <b>With app: </b>9s
-          i.e. a time reduction of 65%.
-          <hr class="seperate-up-down" />
-          <b class="purple">Utilized: </b> React, SASS, MongoDB, PassportJS,
-          ExpressJS
-        </>,
-        "https://github.com/SaqibA1i/Qalculater",
-        "2021",
-        true,
-        false,
-      ],
-    },
+
     {
       "Data Structures and Algorithms": [
         data_structures,
@@ -223,7 +224,7 @@ function Project() {
   const links = {
     "Sorting Visualizer": "https://sort-app.netlify.app/",
     "PS5 UI for Windows!": "https://youtu.be/SHyACovTXSE",
-    "Grades Tracker Web App": "https://qalculater.netlify.app/login",
+    "Grades Tracker Web App": "https://grades-application.netlify.app/",
     "Snake Game": "",
     "Online Portfolio": "https://saqibali.ca",
     "Graph Traversal Algorithm Visualizer":
