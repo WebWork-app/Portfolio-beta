@@ -32,14 +32,10 @@ function Slider() {
         Technologies
         <hr />
       </h2>
-      <div class="slider">
+      <div class="slider" data-aos="zoom-out-up" data-aos-delay={50}>
         {technolgies.map((technolgy, index) => {
           return (
-            <div
-              class="slider-content"
-              data-aos="zoom-out-up"
-              data-aos-delay={index * 50}
-            >
+            <div class="slider-content">
               <img src={Object.entries(technolgy)[0][1]} class="slider-img" />
               <h2>{Object.entries(technolgy)[0][0]}</h2>
             </div>

@@ -15,7 +15,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 import { Grid1x2Fill } from "react-bootstrap-icons";
-import ReactPlayer from "react-player/file";
+import ReactPlayer from "react-player/lazy";
 import GithubLink from "./helperComponents/githubLink";
 import ProjectLink from "./helperComponents/projectLink";
 
