@@ -35,8 +35,8 @@ function Experience() {
     {
       "primer.ai": [
         primer,
-        <>Software Engineer</>,
-        <>May 2021 - August 2021</>,
+        <>Software Engineering Intern</>,
+        <>Jan 2022 - May 2022</>,
         <>
           <li>
             <i>
@@ -44,7 +44,7 @@ function Experience() {
             </i>
           </li>
         </>,
-        "San Fransisco, CA",
+        "San Fransisco, CA, USA",
       ],
     },
     {

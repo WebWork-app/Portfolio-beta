@@ -4,14 +4,21 @@ import resume from "./files/Resume Saqib Ali.pdf";
 import React, { useEffect } from "react";
 
 function SectionCard() {
-  const Jobs = ["Frontend Developer", "Backend Developer", "DevOps Developer"];
+  const Jobs = [
+    "Frontend Engineering",
+    "Backend Engineering",
+    "DevOps Developer",
+  ];
+
   let bubbles = [];
+
   const addBubbles = () => {
     for (let i = 0; i < 50; i++) {
       bubbles.push(<div class="bubble"></div>);
     }
     return bubbles;
   };
+
   useEffect(() => {
     document
       .getElementById("dev")
