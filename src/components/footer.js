@@ -4,8 +4,6 @@ import footer from "./images/footer.png";
 import bubble from "./images/bubble.png";
 
 function Footer() {
-  useEffect(() => {}, []);
-
   return (
     <>
       <div class="footer">
@@ -39,7 +37,8 @@ function Footer() {
               color={"white"}
             />
           </div>
-          <a href="mailto:saqibalip321@gmail.com">Lets talk!</a>
+          <a href="mailto:saqibalip321@gmail.com">Lets talk!</a
+          >
           <div class="footer-bottom">
             <p>Saqib Ali</p>
           </div>

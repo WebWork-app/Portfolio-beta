@@ -36,12 +36,28 @@ function Experience() {
       "primer.ai": [
         primer,
         <>Software Engineering Intern</>,
-        <>Jan 2022 - May 2022</>,
+        <>Jan 2022 - Apr 2022</>,
         <>
           <li>
-            <i>
-              <em>Incoming Software Engineer</em>
-            </i>
+            <span>
+              Executed the merger of separate <em>Redux</em> stores following
+              the consolidation of two major company applications, significantly
+              reducing codebase complexity
+            </span>
+          </li>
+          <li>
+            <span>
+              Standardized authentication logic for the <em>React</em> front-end
+              by leveraging npm packages, abstracting repetitive logic and
+              securing access to company wide applications.
+            </span>
+          </li>
+          <li>
+            <span>
+              Spearheaded the design (UI/UX), and development of an internal
+              tool using <em>React</em>, <em>Python</em> and <em>SQL</em>;
+              ensuring authorized access to services
+            </span>
           </li>
         </>,
         "San Fransisco, CA, USA",
