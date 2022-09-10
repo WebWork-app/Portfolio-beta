@@ -102,7 +102,7 @@ function SectionCard() {
             <div data-aos="zoom-in-left">
               <a
                 class="resume"
-                href={resume}
+                href="https://drive.google.com/file/d/1-GQLGOKtZAKg8IDddgp4hA_YBVtYrMnt/view?usp=sharing"
                 type="application/pdf"
                 target="_blank"
               >
