@@ -10,6 +10,7 @@ import qalc from "./files/qalculater.mp4";
 import laptop from "./images/laptop.png";
 import schmart from "./files/schmart.mp4";
 import phone from "./images/smartphone.png";
+import codele from "./images/codele.png";
 import data_structures from "./images/data_structures_algorithms.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -66,6 +67,19 @@ function Project() {
         "2021",
         true, // is mobile?
         false, // is image?
+      ],
+    },
+    {
+      Codele: [
+        codele,
+        <>
+          An application which presents a random algorithm and alters it daily
+          with the purpose of keeping its users on their toes with algortihms
+        </>,
+        "https://github.com/SaqibA1i/Codele",
+        "2022",
+        false,
+        true,
       ],
     },
     {
@@ -229,6 +243,7 @@ function Project() {
     "Online Portfolio": "https://saqibali.ca",
     "Graph Traversal Algorithm Visualizer":
       "https://graph-algorithm.netlify.app/",
+    Codele: "https://codele.ca/",
   };
   const [repo, setRepos] = useState([]);
   const [gridView, setView] = useState(false);
