@@ -78,7 +78,7 @@ function Project() {
         </>,
         "https://github.com/SaqibA1i/Codele",
         "2022",
-        false,
+        true,
         true,
       ],
     },
@@ -237,6 +237,7 @@ function Project() {
 
   const links = {
     "Sorting Visualizer": "https://sort-app.netlify.app/",
+    Schmart: "https://devpost.com/software/schmart",
     "PS5 UI for Windows!": "https://youtu.be/SHyACovTXSE",
     "Grades Tracker Web App": "https://grades-application.netlify.app/",
     "Snake Game": "",
@@ -424,7 +425,7 @@ function Project() {
                             <ReactPlayer
                               id="player"
                               width="fit-content"
-                              height="fit-content"
+                              height="inherit"
                               loop={true}
                               playing={true}
                               url={Object.entries(project)[0][1][0]}

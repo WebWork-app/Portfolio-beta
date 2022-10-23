@@ -9,3 +9,24 @@
 @mixin box-shadow($color) {
   box-shadow: $color 0px 8px 24px;
 }
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.statClass {
+  transition: --num 3s ease-in-out;
+  font: 800 40px system-ui;
+
+  &:visited {
+    --num: 100;
+  }
+  &:focus {
+    --num: 100;
+  }
+  &::after {
+    content: counter(num);
+  }
+}

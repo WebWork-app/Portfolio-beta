@@ -10,6 +10,7 @@ import "./App.css";
 import "./scss/styles.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Stats from "./components/stats";
 
 function App() {
   useEffect(() => {
