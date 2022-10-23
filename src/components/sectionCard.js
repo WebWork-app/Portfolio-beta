@@ -89,9 +89,9 @@ function SectionCard() {
             </p>
           </h1>
           <p data-aos="fade-down">
-            A student of computer engineering with a strong passion for software
-            development and solid industry experience. If you are looking to
-            hire, please contact me here:
+            A computer engineering student at the university of Waterloo with a
+            strong passion for software development and solid industry
+            experience.
           </p>
           <div class="section-container-btns">
             <div data-aos="zoom-in-right">
