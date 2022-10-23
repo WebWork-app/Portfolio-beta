@@ -354,7 +354,7 @@ function Project() {
                             <ReactPlayer
                               id="player"
                               width="fit-content"
-                              height="fit-content"
+                              height="inherit"
                               loop={true}
                               playing={true}
                               url={Object.entries(project)[0][1][0]}
