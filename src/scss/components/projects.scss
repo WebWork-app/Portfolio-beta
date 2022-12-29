@@ -7,13 +7,14 @@
     margin: 0 auto;
     padding-top: 40px;
     width: 100%;
+    font-family: logoFont;
     .header-btn {
       background-color: transparent;
       border: none;
     }
   }
   .all-companies {
-    width: 50%;
+    width: 100%;
     @include flex-center(row);
     margin: 0 auto;
     @media (max-width: 600px) {

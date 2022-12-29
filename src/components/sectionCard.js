@@ -41,13 +41,13 @@ function SectionCard() {
   return (
     <>
       <div class="main">
-        <img data-aos="zoom-out-up" style={{ "z-index": "1300" }} src={Icon} />
+        {/* <img data-aos="zoom-out-up" style={{ "z-index": "1300" }} src={Icon} /> */}
         <div class="bubble-container">
           <div class="bubble-wrap">{addBubbles()}</div>
         </div>
 
         <div id="two" class="main-img">
-          <img
+          {/* <img
             id="image1"
             class="top-img"
             src={bg}
@@ -80,9 +80,9 @@ function SectionCard() {
               position: "absolute",
               bottom: 0,
             }}
-          />
+          /> */}
           <h1 data-aos="fade-down">
-            SAQIB ALI
+            WebWork
             <br />
             <p class="aspire" data-aos="fade-down">
               <div id="dev">{Jobs[0]}</div>
@@ -96,23 +96,13 @@ function SectionCard() {
           <div class="section-container-btns">
             <div data-aos="zoom-in-right">
               <a href="mailto:saqibalip321@gmail.com" class="mail">
-                Email Me
-              </a>
-            </div>
-            <div data-aos="zoom-in-left">
-              <a
-                class="resume"
-                href="https://drive.google.com/file/d/1-GQLGOKtZAKg8IDddgp4hA_YBVtYrMnt/view?usp=sharing"
-                type="application/pdf"
-                target="_blank"
-              >
-                Resume
+                Contact Us
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div id="bottom-oval"></div>
+      {/* <div id="bottom-oval"></div> */}
     </>
   );
 }

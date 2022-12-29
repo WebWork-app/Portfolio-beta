@@ -242,52 +242,6 @@ function Experience() {
             );
           })}
         </div>
-        <div
-          class="projects"
-          style={{ "max-width": "1200px", margin: "0 auto" }}
-        >
-          <Carousel width="inherit" {...getConfigurableProps()}>
-            {experiences.map((project) => {
-              return (
-                <>
-                  <div class="single">
-                    <div class="left">
-                      <img
-                        class="first"
-                        src={Object.entries(project)[0][1][0]}
-                        data-aos="fade-right"
-                      />
-                      <h3 data-aos="fade-right" data-aos-delay="60">
-                        <h5 class="job-info" data-aos-delay="120">
-                          <BriefcaseFill />
-                          {"     "}
-                          <b>{Object.entries(project)[0][1][1]}</b>
-                        </h5>
-                        <h5 class="job-info" data-aos-delay="120">
-                          <Calendar2 />
-                          {"     "}
-                          {Object.entries(project)[0][1][2]}
-                        </h5>
-                        <h5 class="job-info" data-aos-delay="120">
-                          <GeoAltFill />
-                          {"     "}
-                          {Object.entries(project)[0][1][4]}
-                        </h5>
-                      </h3>
-                    </div>
-                    <div
-                      data-aos="fade-left"
-                      class="project-info project-info-greater"
-                      style={{ paddingTop: "0px" }}
-                    >
-                      <ul>{Object.entries(project)[0][1][3]}</ul>
-                    </div>
-                  </div>
-                </>
-              );
-            })}
-          </Carousel>
-        </div>
       </div>
     </div>
   );

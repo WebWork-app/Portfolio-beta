@@ -11,22 +11,7 @@ nav {
   outline: none;
   height: 70px;
   transition: 0.25s padding-top ease-in-out, 0.25s padding-bottom ease-in-out;
-  .nav-eye {
-    width: 40px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid white;
-    animation: eye 2s infinite alternate-reverse;
-    .eye-pupil {
-      position: relative;
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      border: 1px solid white;
-      background: white;
-      transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-    }
-  }
+  color: $text-black;
 }
 @keyframes eye {
   from {
@@ -37,7 +22,7 @@ nav {
   }
 }
 .nav-scrolling {
-  background-color: #171de4a8;
+  background-color: #f2ce00b0;
   box-shadow: $raised-shadow;
   transition: 200ms background-color ease-in-out;
   backdrop-filter: blur(10px);
@@ -49,9 +34,9 @@ nav {
 .nav-left {
   margin-left: 20px;
   font-weight: 700;
-  border: solid 3px $text-grey;
+  border: solid 3px $text-black;
   padding: 5px;
-  color: $text-grey;
+  color: $text-black;
 }
 .nav-right {
   margin-right: 20px;
@@ -61,8 +46,8 @@ nav {
   a {
     font-size: 14px;
     max-width: 600px;
-    font-weight: 500;
-    color: $text-grey;
+    font-weight: 600;
+    color: $text-black;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
@@ -71,7 +56,6 @@ nav {
     padding: 15px 20px;
     position: relative;
     @media (max-width: $min-breakpoint) {
-      font-weight: 400;
       font-size: 11px;
     }
   }

@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <Navbar />
       <SectionCard />
-      <Slider />
+      {/* <Slider /> */}
       <br />
       <Experience />
       <Projects />

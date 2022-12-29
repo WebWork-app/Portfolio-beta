@@ -16,7 +16,6 @@ function Footer() {
               }}
               class="footer-icon"
               size={30}
-              color={"white"}
             />
             <Github
               onClick={() => {
@@ -25,7 +24,6 @@ function Footer() {
               }}
               class="footer-icon"
               size={30}
-              color={"white"}
             />
             <Linkedin
               onClick={() => {
@@ -34,14 +32,12 @@ function Footer() {
               }}
               class="footer-icon"
               size={30}
-              color={"white"}
             />
           </div>
-          <a href="mailto:saqibalip321@gmail.com">Lets talk!</a
-          >
           <div class="footer-bottom">
-            <p>Saqib Ali</p>
+            <p>WebWork</p>
           </div>
+          <p className="right">2022 WebWork. All rights reserved.</p>
         </div>
       </div>
     </>
