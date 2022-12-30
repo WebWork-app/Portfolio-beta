@@ -9,7 +9,7 @@ import swiftlabs from './swiftlabs.png';
 import blackline from './blackline_safety.png';
 import d2l from './d2l.png';
 import orange from './orange.png';
-
+import arcticwolf from './arcticwolf.png';
 
 export {
     ford,
@@ -22,5 +22,6 @@ export {
     swiftlabs,
     blackline,
     d2l,
-    orange
+    orange,
+    arcticwolf
 };

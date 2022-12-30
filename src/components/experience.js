@@ -1,7 +1,7 @@
 import React from "react";
 import { Calendar2, GeoAltFill, BriefcaseFill } from "react-bootstrap-icons";
 
-import { ford, opentext, cgi, wework, primer, kenna, extreme, swiftlabs, blackline, d2l, orange} from './images';
+import { ford, opentext, cgi, wework, primer, kenna, extreme, swiftlabs, blackline, d2l, orange, arcticwolf } from './images';
 import wave4 from "./images/wave4.svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -43,14 +43,15 @@ const Experience = () => {
     "Swift Labs": swiftlabs,
     "Blackline Safety": blackline,
     "D2L": d2l,
-    "Orange": orange
+    "Orange": orange,
+    "Arctic Wolf": arcticwolf
   }
 
   return (
     <div style={{ overflow: "hidden" }}>
       <img src={wave4} class="top-wave" alt="Experience" />
       <div id="three" class="project-section">
-        <h2 class="slider-header" data-acs="fade-up">
+        <h2 class="slider-header" data-acs="fade-up"> 
           Experience
           <hr />
         </h2>
