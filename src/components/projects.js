@@ -275,7 +275,7 @@ function Project() {
         class="slider-header"
         style={{ "background-color": "transparent" }}
       >
-        Projects{" "}
+        Previous Work{" "}
         <button
           class="header-btn"
           onClick={() => {
@@ -292,34 +292,6 @@ function Project() {
         <hr />
       </h2>
       <div class="projects" id="projects">
-        {!gridView && (
-          <div class="all-companies">
-            {projects.map((project, index) => {
-              return (
-                <div
-                  id={"company-container-" + index}
-                  class="company-container"
-                  style={{
-                    width: "auto",
-                    height: "0px",
-                    backgroundColor: "tansparent",
-                    color: "#333",
-                  }}
-                  onClick={() => {
-                    document
-                      .getElementsByClassName("control-dots")[1]
-                      .getElementsByClassName("dot")
-                      [index].click();
-                  }}
-                >
-                  <a class="main-btn" style={{ fontSize: "10px" }}>
-                    <p class="center">{Object.entries(project)[0][0]}</p>
-                  </a>
-                </div>
-              );
-            })}
-          </div>
-        )}
         {!gridView ? (
           <Carousel width="inherit" {...getConfigurableProps()}>
             {projects.map((project) => {

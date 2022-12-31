@@ -11,6 +11,7 @@ import "./scss/styles.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Stats from "./components/stats";
+import BeforeAfter from "./components/beforeAfter";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
       {/* <Slider /> */}
       <br />
       <Experience />
+      <BeforeAfter />
       <Projects />
       <Footer />
     </div>
