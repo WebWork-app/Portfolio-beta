@@ -7,7 +7,8 @@ function SectionCard() {
   const Jobs = [
     "Frontend Engineering",
     "Backend Engineering",
-    "DevOps Developer",
+    "DevOps Engineering",
+    "Design Services"
   ];
 
   let bubbles = [];
@@ -89,13 +90,12 @@ function SectionCard() {
             </p>
           </h1>
           <p data-aos="fade-down">
-            A computer engineering student at the university of Waterloo with a
-            strong passion for software development and solid industry
-            experience.
+            At WebWork, our mission is to help businesses reach their potential
+            by providing a simple service to design and create modern websites.
           </p>
           <div class="section-container-btns">
             <div data-aos="zoom-in-right">
-              <a href="mailto:saqibalip321@gmail.com" class="mail">
+              <a href="mailto:webwork.devs@gmail.com" class="mail">
                 Contact Us
               </a>
             </div>
