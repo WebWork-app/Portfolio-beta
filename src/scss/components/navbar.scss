@@ -33,11 +33,17 @@ nav {
   transition: 200ms background-color ease-in-out;
 }
 .nav-left {
-  margin-left: 20px;
+  margin-left: 0;
   font-weight: 700;
-  border: solid 3px $text-black;
+  width: 70px;
+  height: 70px;
+  // border: solid 3px $text-black;
   padding: 5px;
   color: $text-black;
+  img {
+    height: inherit;
+    width: inherit;
+  }
 }
 .nav-right {
   margin-right: 20px;

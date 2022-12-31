@@ -8,6 +8,9 @@ import {
   Mailbox,
   Mailbox2,
 } from "react-bootstrap-icons";
+
+import Logo from "./images/logo.png";
+
 function Navbar() {
   // THE MOVING EYE
   // document.addEventListener("mousemove", (event) => {
@@ -37,7 +40,9 @@ function Navbar() {
   // });
   return (
     <nav id="navbar" class="trans">
-      <div class="nav-left">SA</div>
+      <div class="nav-left">
+        <img src={Logo} />
+      </div>
       {/* <div id="nav-eye" class="nav-eye">
         <div id="eye-pupil" class="eye-pupil"></div>
       </div> */}

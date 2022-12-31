@@ -20,8 +20,8 @@ const BeforeAfter = () => {
       </h2>
       <div className="beforeAfter">
         <ReactBeforeSliderComponent
-          firstImage={FIRST_IMAGE}
-          secondImage={SECOND_IMAGE}
+          firstImage={SECOND_IMAGE}
+          secondImage={FIRST_IMAGE}
         />
         <div className="testimonial">
           {/* <PersonCircle size={40} color={"grey"} /> */}
