@@ -22,6 +22,7 @@ const BeforeAfter = () => {
         <ReactBeforeSliderComponent
           firstImage={SECOND_IMAGE}
           secondImage={FIRST_IMAGE}
+          delimiterColor={"#f2cf00"}
         />
         <div className="testimonial">
           {/* <PersonCircle size={40} color={"grey"} /> */}
