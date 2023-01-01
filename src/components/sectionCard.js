@@ -1,4 +1,4 @@
-import Icon from "./images/profile.jpg";
+import Icon from "./images/logo.png";
 import bg from "./images/body-wave2.png";
 import resume from "./files/Resume Saqib Ali.pdf";
 import React, { useEffect } from "react";
