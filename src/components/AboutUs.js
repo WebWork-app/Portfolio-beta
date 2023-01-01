@@ -14,7 +14,7 @@ function AboutUs() {
   return (
     <div>
 <h2 id="aboutUsFont" class="slider-header" data-aos="fade-up">Meet the Team<hr /> </h2>
-<h3 data-aos="fade-up">Meet the team behind driving customer demand...</h3>
+<h3>Led by some of Canada's brightest young minds, our team of developers and designers are here to help you build your ideal website. Get to know the people inspiring the next wave of creativity at WebWorks:</h3>
 
 <div class="row center">
   <div class="column">

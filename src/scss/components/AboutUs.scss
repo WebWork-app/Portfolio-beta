@@ -4,6 +4,11 @@
   src: url("../../fonts/adlery-pro/Adlery-Pro-trial.ttf");
 }
 
+h3 {
+  text-align: left;
+  padding: 0px 148px;
+}
+
 #aboutUsFont {
   font-family: logoFont;
 }
@@ -20,15 +25,25 @@
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 25px;
   margin: 8px;
   padding: 16px 16px;
-
 }
 
 .container {
-  padding: 16px 16px;
+  padding: 0px 16px;
+  padding-left: 0;
+  text-align: left;
+
+  h2 {
+    margin-bottom: 0;
+    margin-top: 10px;
+
+  }
+
+  p {
+    margin-top: 6px;
+  }
+
 }
 
 .container::after, .row::after {

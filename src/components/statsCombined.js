@@ -33,7 +33,7 @@ function StatsCombined() {
     <div class="block">
       <h2 class= "clientcount item"> </h2>
       <h2 class = "expcount item" >5 Years of Experience</h2>
-      <h2 class = "item" >25<span class="Plus">+</span> Projects</h2>
+      <h2 class = "expcount item" >25+ Projects</h2>
 
     </div>
   )
