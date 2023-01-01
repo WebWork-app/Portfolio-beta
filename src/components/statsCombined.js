@@ -31,12 +31,23 @@ const getConfigurableProps = () => ({
 function StatsCombined() {
   return (
     <div class="block">
-      <h2 class= "clientcount item"> </h2>
-      <h2 class = "expcount item" >5 Years of Experience</h2>
-      <h2 class = "expcount item" >25+ Projects</h2>
-
+      <h2 class="expcount item">
+        12 <b>+</b>
+        <br />
+        <div className="text">Companies</div>
+      </h2>
+      <h2 class="expcount item">
+        5 <b>+</b>
+        <br />
+        <div className="text">Years of Experience</div>
+      </h2>
+      <h2 class="expcount item">
+        25 <b>+</b>
+        <br />
+        <div className="text">Completed Projects</div>
+      </h2>
     </div>
-  )
+  );
 }
 
 export default StatsCombined;

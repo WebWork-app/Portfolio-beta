@@ -3,6 +3,7 @@
   z-index: 100;
   background-color: #f3f3f7;
   padding-bottom: 30px;
+  max-width: 100vw;
   h2 {
     margin: 0 auto;
     padding-top: 10px;
@@ -202,9 +203,9 @@
         align-items: center;
         display: flex;
         .project-tag {
-          background-color: $main-accent;
+          background: $yellow-gradient;
           font-size: 15px;
-          color: white;
+          color: $text-black;
           height: auto;
           padding: 5px 6px;
           border-radius: 5px;
@@ -253,8 +254,8 @@
         text-align: left;
         margin-top: 30px;
         .main-btn {
-          background-color: $main-accent;
-          color: $text-grey;
+          background: $yellow-gradient;
+          color: $text-black;
           width: auto;
           border-radius: 30px;
           border: 0;

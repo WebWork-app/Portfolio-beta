@@ -47,11 +47,6 @@ function Navbar() {
         <div id="eye-pupil" class="eye-pupil"></div>
       </div> */}
       <ul class="nav-right">
-        <a href="#two">
-          <li data-aos="fade-down">
-            <span>About</span>
-          </li>
-        </a>
         <a href="#three">
           <li data-aos="fade-down" data-aos-delay="50">
             <span>Experience</span>
@@ -60,6 +55,11 @@ function Navbar() {
         <a href="#four">
           <li data-aos="fade-down" data-aos-delay="100">
             <span>Projects</span>
+          </li>
+        </a>
+        <a href="#five">
+          <li data-aos="fade-down">
+            <span>Team</span>
           </li>
         </a>
       </ul>

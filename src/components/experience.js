@@ -1,13 +1,26 @@
 import React from "react";
 import { Calendar2, GeoAltFill, BriefcaseFill } from "react-bootstrap-icons";
 
-import { ford, opentext, cgi, wework, primer, kenna, extreme, swiftlabs, blackline, d2l, orange, arcticwolf } from './images';
+import {
+  ford,
+  opentext,
+  cgi,
+  wework,
+  primer,
+  kenna,
+  extreme,
+  swiftlabs,
+  blackline,
+  d2l,
+  orange,
+  arcticwolf,
+} from "./images";
 import wave4 from "./images/wave4.svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-
 import bg from "./images/body-wave2.png";
+import StatsCombined from "./statsCombined";
 
 const getConfigurableProps = () => ({
   showArrows: true,
@@ -31,30 +44,30 @@ const getConfigurableProps = () => ({
 });
 
 const Experience = () => {
-  const employers =
-  {
-    "Ford": ford,
-    "OpenText": opentext,
-    "CGI": cgi,
-    "Primer": primer,
-    "WeWork": wework,
-    "Kenna": kenna,
+  const employers = {
+    Ford: ford,
+    OpenText: opentext,
+    CGI: cgi,
+    Primer: primer,
+    WeWork: wework,
+    Kenna: kenna,
     "Extreme Networks": extreme,
     "Swift Labs": swiftlabs,
     "Blackline Safety": blackline,
-    "D2L": d2l,
-    "Orange": orange,
-    "Arctic Wolf": arcticwolf
-  }
+    D2L: d2l,
+    Orange: orange,
+    "Arctic Wolf": arcticwolf,
+  };
 
   return (
     <div style={{ overflow: "hidden" }}>
       <img src={wave4} class="top-wave" alt="Experience" />
       <div id="three" class="project-section">
-        <h2 class="slider-header" data-acs="fade-up"> 
-          Clients
+        <h2 class="slider-header" data-acs="fade-up">
+          Experience
           <hr />
         </h2>
+        <StatsCombined />
 
         <div class="all-companies">
           {Object.values(employers).map((e, i) => {
@@ -68,17 +81,16 @@ const Experience = () => {
                   class="company"
                   src={e}
                   data-aos="zoom-in"
-                  data-aos-delay={i*100}
+                  data-aos-delay={i * 100}
                   alt="company"
                 />
               </div>
             );
           })}
         </div>
-      
       </div>
     </div>
   );
-}
+};
 
 export default Experience;

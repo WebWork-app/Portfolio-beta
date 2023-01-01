@@ -6,16 +6,15 @@
 
 h3 {
   text-align: left;
-  padding: 0px 148px;
+  padding: 0px 20px;
 }
 
 #aboutUsFont {
   font-family: logoFont;
 }
 
-.center{
+.center {
   align-content: center;
-
 }
 .column {
   display: inline-block;
@@ -37,16 +36,15 @@ h3 {
   h2 {
     margin-bottom: 0;
     margin-top: 10px;
-
   }
 
   p {
     margin-top: 6px;
   }
-
 }
 
-.container::after, .row::after {
+.container::after,
+.row::after {
   content: "";
   clear: both;
 }

@@ -4,12 +4,7 @@ import resume from "./files/Resume Saqib Ali.pdf";
 import React, { useEffect } from "react";
 
 function SectionCard() {
-  const Jobs = [
-    "Frontend Engineering",
-    "Backend Engineering",
-    "DevOps Engineering",
-    "Design Services"
-  ];
+  const Jobs = ["UI /UX Design", "End to End Web Services"];
 
   let bubbles = [];
 
@@ -90,8 +85,8 @@ function SectionCard() {
             </p>
           </h1>
           <p data-aos="fade-down">
-            At WebWork, our mission is to help businesses reach their potential
-            by providing a simple service to design and create modern websites.
+            Striving to help businesses reach their potential and establish
+            online credibility by designing and creating modern websites.
           </p>
           <div class="section-container-btns">
             <div data-aos="zoom-in-right">

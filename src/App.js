@@ -26,14 +26,11 @@ function App() {
     <div className="App">
       <Navbar />
       <SectionCard />
-      <StatsCombined />
-      <Experience />
-      {/* <Slider /> */}
-      <AboutUs />
-      <br />
       <Experience />
       <BeforeAfter />
       <Projects />
+      <AboutUs />
+
       <Footer />
     </div>
   );
