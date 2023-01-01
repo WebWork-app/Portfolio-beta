@@ -9,26 +9,10 @@ function Footer() {
       <div class="footer">
         <div class="footer-content">
           <div class="footer-icons">
-            <Youtube
-              onClick={() => {
-                window.location.href =
-                  "https://www.youtube.com/channel/UChbV48W0We8mOFe50MJeKIQ";
-              }}
-              class="footer-icon"
-              size={30}
-            />
-            <Github
-              onClick={() => {
-                window.location.href =
-                  "https://github.com/SaqibA1i?tab=repositories";
-              }}
-              class="footer-icon"
-              size={30}
-            />
             <Linkedin
               onClick={() => {
                 window.location.href =
-                  "https://www.linkedin.com/in/saqib-ali-25b2aa213/";
+                  "https://www.linkedin.com/company/web-work";
               }}
               class="footer-icon"
               size={30}

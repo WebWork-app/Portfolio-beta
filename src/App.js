@@ -32,6 +32,7 @@ function App() {
       <AboutUs />
       <br />
       <Experience />
+      <BeforeAfter />
       <Projects />
       <Footer />
     </div>
