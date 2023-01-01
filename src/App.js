@@ -12,6 +12,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Stats from "./components/stats";
 import BeforeAfter from "./components/beforeAfter";
+import AboutUs from "./components/AboutUs";
+import StatsCombined from "./components/statsCombined";
 
 function App() {
   useEffect(() => {
@@ -24,10 +26,12 @@ function App() {
     <div className="App">
       <Navbar />
       <SectionCard />
+      <StatsCombined />
+      <Experience />
       {/* <Slider /> */}
+      <AboutUs />
       <br />
       <Experience />
-      <BeforeAfter />
       <Projects />
       <Footer />
     </div>

@@ -1,0 +1,49 @@
+@import "./helpers/variables.scss";
+@font-face {
+  font-family: logoFont;
+  src: url("../../fonts/adlery-pro/Adlery-Pro-trial.ttf");
+}
+
+#aboutUsFont {
+  font-family: logoFont;
+}
+
+.center{
+  align-content: center;
+
+}
+.column {
+  display: inline-block;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 8px;
+  padding: 16px 16px;
+
+}
+
+.container {
+  padding: 16px 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: auto;
+    display: block;
+  }
+}

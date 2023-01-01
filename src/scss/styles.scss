@@ -1,6 +1,7 @@
 @import "./helpers/mixins.scss";
 @import "./components/experience.scss";
 @import "./components/footer.scss";
+@import "./components/AboutUs.scss";
 @import "./components/navbar.scss";
 @import "./components/projects.scss";
 @import "./components/sectionCard.scss";
@@ -9,6 +10,7 @@
 
 @import "./helpers/variables.scss";
 @import "./components/bubbleAnim.scss";
+@import "./components/Stats.scss";
 
 hr {
   width: 70%;

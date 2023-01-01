@@ -1,0 +1,79 @@
+@property --num {
+  initial-value: 0;
+  inherits: false;
+}
+
+.clientcount {
+  animation: counter 1s ease-in-out;
+  --num: 12;
+  counter-reset: num var(--num);
+}
+
+.clientcount::after {
+  content: counter(num) "+ Satisfied Clients";
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 12;
+  }
+}
+
+@property --num2 {
+  initial-value: 0;
+  inherits: false;
+}
+
+.expcount {
+  animation: expcounter 1s ease-in-out;
+  --num2: 12;
+  counter-reset: num2 var(--num2);
+}
+
+.expcount::after {
+  content: expcounter(num2) "+  ss Clients";
+}
+
+@keyframes expcounter {
+  from {
+    --num2: 0;
+  }
+  to {
+    --num2: 12;
+  }
+}
+
+
+
+
+
+
+
+
+.block {
+  // position: fixed;
+  background-color: #e2e2e2b0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  color: $text-black;
+  box-shadow: $raised-shadow;
+}
+
+.item {
+  font-size: 28px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.Plus {
+  color: #f2ce00b0;
+}

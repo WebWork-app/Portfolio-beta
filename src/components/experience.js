@@ -52,7 +52,7 @@ const Experience = () => {
       <img src={wave4} class="top-wave" alt="Experience" />
       <div id="three" class="project-section">
         <h2 class="slider-header" data-acs="fade-up"> 
-          Experience
+          Clients
           <hr />
         </h2>
 

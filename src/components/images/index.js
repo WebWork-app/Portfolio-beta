@@ -10,6 +10,9 @@ import blackline from './blackline_safety.png';
 import d2l from './d2l.png';
 import orange from './orange.png';
 import arcticwolf from './arcticwolf.png';
+import saqiba from './saqiba.jpg';
+import shazilr from './shazilr.jpg';
+
 
 export {
     ford,
@@ -23,5 +26,8 @@ export {
     blackline,
     d2l,
     orange,
-    arcticwolf
+    arcticwolf,
+    saqiba,
+    shazilr,
+
 };
