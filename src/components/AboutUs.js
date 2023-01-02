@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import data_structures from "./images/data_structures_algorithms.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { shazilr, saqiba } from "./images";
+import { ariba, shazilr, sufyana, saqiba } from "./images";
 
 import { Grid1x2Fill } from "react-bootstrap-icons";
 import ReactPlayer from "react-player/lazy";
@@ -60,7 +60,7 @@ function AboutUs() {
         <div class="column">
           <div class="card">
             <img
-              src="/images/aribh.jpg"
+              src={ariba}
               alt="Arib"
               style={{ width: "100%", height: "50%" }}
             ></img>
@@ -74,7 +74,7 @@ function AboutUs() {
         <div class="column">
           <div class="card">
             <img
-              src="/images/sufyana.jpg"
+              src={sufyana}
               alt="Sufyan"
               style={{ width: "100%", height: "50%" }}
             ></img>
