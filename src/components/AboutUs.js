@@ -48,7 +48,7 @@ const AboutUs = () => {
             <img src={sufyana} alt="Sufyan" />
             <div class="container">
               <h2>Sufyan A.</h2>
-              <p class="title">Co-founder & Director of Design and Marketing<br /><br /></p>
+              <p class="title">Co-founder & Director of Design <br /> and Marketing<br /></p>
             </div>
           </div>
 
