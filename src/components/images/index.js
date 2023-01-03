@@ -10,7 +10,7 @@ import blackline from './blackline_safety.png';
 import d2l from './d2l.png';
 import orange from './orange.png';
 import arcticwolf from './arcticwolf.png';
-import ariba from './ariba.jpg';
+import aribh from './aribh.jpg';
 import saqiba from './saqiba.jpg';
 import shazilr from './shazilr.jpg';
 import sufyana from './sufyana.jpg';
@@ -32,5 +32,5 @@ export {
     shazilr,
     sufyana,
     saqiba,
-    ariba,
+    aribh,
 };
