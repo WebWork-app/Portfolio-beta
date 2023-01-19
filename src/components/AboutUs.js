@@ -12,7 +12,7 @@ const AboutUs = () => {
         </h2>
         <h3 class="aos-init aos-animate about-sub">
           Led by some of Canada's brightest young minds, our team of
-          <i> developers</i> and <i>designers,</i> are here to help you build your
+          <i> developers</i> and <i>designers</i> are here to help you build your
           ideal website. Get to know the people inspiring the next wave of{" "}
           <i>creativity</i> at WebWorks:
         </h3>
