@@ -4,7 +4,7 @@ import resume from "./files/Resume Saqib Ali.pdf";
 import React, { useEffect } from "react";
 
 function SectionCard() {
-  const Jobs = ["UI /UX Design", "End to End Web Services"];
+  const Jobs = ["UI/UX Design", "End to End Web Services"];
 
   let bubbles = [];
 

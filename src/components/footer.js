@@ -12,7 +12,7 @@ function Footer() {
             <Linkedin
               onClick={() => {
                 window.location.href =
-                  "https://www.linkedin.com/company/web-work";
+                  "www.linkedin.com/in/webwork-developers";
               }}
               class="footer-icon"
               size={30}
